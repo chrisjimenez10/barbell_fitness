@@ -52,9 +52,14 @@ const Header = () => {
               )
             })}
           </div>
+
+          {/* This is the Component that displays the background when user opens Hamburger Menu by clicking on the hamburger icon */}
           <HamburgerMenu />
         </nav>
 
+        {/* NOTE: If owner wants to add additional buttons/links, this is the place to add */}
+
+        {/* This is the Hamburger Icon Button to open Hamburger Menu */}
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
           <MenuSvg openNavigation={openNavigation}/>
         </Button>

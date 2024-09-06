@@ -1,5 +1,5 @@
 const ButtonGradient = ({openNavigation}) => {
-    //To change the color gradients of the buttons (each side has a gradient change using the two <stop> elements from the linearGradient compnent and replacing the hexcode in the "stopColor" attribute)
+    //To change the color gradients of the buttons (each side has a gradient change using the two <stop> elements from the linearGradient compnent and replacing the hexcode in the "stopColor" attribute) --> Added dynamic color change of hamburger icon when it is activated/deactivated through state of openNavigation
     return (
       <svg className="block" width={0} height={0}>
         <defs>
