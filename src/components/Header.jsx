@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import MenuSvg from "./design/MenuSvg";
 import Button from "./Button";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import ButtonGradient from "./design/ButtonGradient";
+import { HamburgerMenu } from "./design/HamburgerBackground";
 
 const Header = () => {
 
@@ -44,20 +46,21 @@ const Header = () => {
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((item)=>{
               return(
-                <a key={item.id} onClick={handleClick} href={item.url} className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-n-14 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12 ${item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"}`}>
+                <a key={item.id} onClick={handleClick} href={item.url} className={`block relative mx-20 md:mx-10 font-code text-2xl uppercase text-n-1 transition-colors hover:text-n-14 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12 ${item.url === pathname.hash ? "z-2 lg:text-n-1" : "lg:text-n-1/50"}`}>
                   {item.title}
                 </a>
               )
             })}
           </div>
-
-          <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
-            <MenuSvg openNavigation={openNavigation}/>
-          </Button>
-
+          <HamburgerMenu />
         </nav>
 
+        <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
+          <MenuSvg openNavigation={openNavigation}/>
+        </Button>
+
       </div>
+      <ButtonGradient openNavigation={openNavigation}/>
     </div>
   )
 }

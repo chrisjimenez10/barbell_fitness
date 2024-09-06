@@ -1,4 +1,5 @@
-import Header from "./components/Header"
+import Header from "./components/Header";
+import ButtonGradient from "./components/design/ButtonGradient";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
         <Header />
       </div>
      
+      <ButtonGradient />
     </>
   )
 }
