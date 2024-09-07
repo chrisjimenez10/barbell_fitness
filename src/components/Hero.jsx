@@ -1,3 +1,4 @@
+//Custom Components
 import Section from "./Section";
 import { useRef } from "react";
 import { deadliftVideo } from "../assets";

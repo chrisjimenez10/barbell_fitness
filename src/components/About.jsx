@@ -1,7 +1,13 @@
 import Section from "./Section";
+import Button from "./Button";
+
 import { companyLogo, barbellIcon, dumbellsIcon, plateIcon, benchpressIcon, blackLines } from "../assets";
+import { healthyLinks } from "../constants";
+
 import { MouseParallax } from "react-just-parallax";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+
 
 
 const About = () => {
@@ -19,6 +25,7 @@ const About = () => {
             <div className="text-center pt-5 z-10">
                 <h1 className="text-[1.5rem] sm:h1 uppercase font-extrabold text-n-1">Make Healthier Choices</h1>
                 <p className="body-2 text-n-1/90 pt-5">Guiding people to a stronger, leaner body. Creating good habits and healthy relationship with their favorite foods! Earning the body they work for and deserve</p>
+                <Link to="/learnmore"><Button white className="mt-5 md:hidden">Learn More</Button></Link>
             </div>
         
             <img src={companyLogo} alt="Barbell Logo" className="absolute top-0 right-0 -translate-y-9 z-2 opacity-10"/>
@@ -32,6 +39,14 @@ const About = () => {
                     <img src={benchpressIcon} alt="BenchPress Icon" width={100} height={80} className="absolute right-[2rem] -translate-y-10 2xl:-right-[8rem]"/>
                 </div> 
             </MouseParallax>
+
+            <ul className="hidden md:flex items-center justify-between mt-[3rem]">
+                {healthyLinks.map((item)=>{
+                    return(
+                        <Button white href={item.url} key={item.id}>{item.title}</Button>
+                    )
+                })}
+            </ul>
      
         </div>
 

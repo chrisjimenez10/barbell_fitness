@@ -2,11 +2,13 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import LearnMore from "./components/LearnMore";
 import Error from "./components/Error";
 //Design Components
 import ButtonGradient from "./components/design/ButtonGradient";
-
+//Dynamic Routing
 import {Routes, Route} from "react-router-dom";
+
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
             <Hero />
             <About />
           </>} />
+          <Route path="/learnmore" element={<LearnMore />} />
           <Route path="*" element={<Error />} />
         </Routes>
 
