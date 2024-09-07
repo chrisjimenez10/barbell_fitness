@@ -39,7 +39,7 @@ const Header = () => {
 
         <a href="#hero" className="flex w-[12rem] xl:mr-8 gap-5">
           <img src={companyLogo} width={60} height={20} alt="Barbell Logo" className="rounded-full"/>
-          <h1 className="text-[1.5rem] relative top-4 font-bold"><nobr>Barbell Fitness</nobr></h1>
+          <h1 className="text-[1.5rem] relative top-4 font-bold">Barbell&nbsp;Fitness</h1>
         </a>
 
         <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
