@@ -3,6 +3,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { useLocation } from "react-router-dom";
 import { companyLogo } from "../assets";
 import { navigation } from "../constants";
+import { useNavigate } from "react-router-dom";
 //Custom Components
 import Button from "./Button";
 //Design Components
@@ -12,6 +13,9 @@ import ButtonGradient from "./design/ButtonGradient";
 
 
 const Header = () => {
+
+  //Navigate
+  const navigate = useNavigate();
 
   //State
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -31,16 +35,20 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    if(!openNavigation) return;
+    if(!openNavigation){
+      navigate("/");
+      return;
+    }
     enablePageScroll();
     setOpenNavigation(false);
-  }
+    navigate("/");
+  };
 
   return (
     <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
       <div className="flex items-center py-4 px-5 xl:px-12">
 
-        <a href="#hero" className="flex w-[12rem] xl:mr-8 gap-5">
+        <a href="#hero" className="flex w-[12rem] xl:mr-8 gap-5" onClick={()=> navigate("/")}>
           <img src={companyLogo} width={60} height={20} alt="Barbell Logo" className="rounded-full"/>
           <h1 className="text-[1.5rem] relative top-4 font-bold">Barbell&nbsp;Fitness</h1>
         </a>

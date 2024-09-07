@@ -9,9 +9,7 @@ import GradientLight from "./design/GradientLight";
 
 const Error = () => {
   return (
-    <Section
-    id="error"
-    >
+    <Section id="error">
     
         <div className="flex flex-col items-center h-[40rem]">
           <h1 className="text-[10rem] font-extrabold">404</h1>
