@@ -1,12 +1,15 @@
 import { useState } from "react";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { useLocation } from "react-router-dom";
 import { companyLogo } from "../assets";
 import { navigation } from "../constants";
-import { useLocation } from "react-router-dom";
-import MenuSvg from "./design/MenuSvg";
+//Custom Components
 import Button from "./Button";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import ButtonGradient from "./design/ButtonGradient";
+//Design Components
+import MenuSvg from "./design/MenuSvg";
 import { HamburgerMenu } from "./design/HamburgerBackground";
+import ButtonGradient from "./design/ButtonGradient";
+
 
 const Header = () => {
 

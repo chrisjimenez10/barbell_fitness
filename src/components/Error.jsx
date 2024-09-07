@@ -1,3 +1,4 @@
+//Dynamic Routing
 import { Link } from "react-router-dom";
 // Custom Components
 import Section from "./Section";
