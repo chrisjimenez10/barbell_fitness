@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { companyLogo, barbellIcon, dumbellsIcon, plateIcon, benchpressIcon } from "../assets";
+import { companyLogo, barbellIcon, dumbellsIcon, plateIcon, benchpressIcon, blackLines } from "../assets";
 import { MouseParallax } from "react-just-parallax";
 import { useRef } from "react";
 
@@ -20,21 +20,19 @@ const About = () => {
                 <h1 className="text-[1.5rem] sm:h1 uppercase font-extrabold text-n-1">Make Healthier Choices</h1>
                 <p className="body-2 text-n-1/90 pt-5">Guiding people to a stronger, leaner body. Creating good habits and healthy relationship with their favorite foods! Earning the body they work for and deserve</p>
             </div>
+        
+            <img src={companyLogo} alt="Barbell Logo" className="absolute top-0 right-0 -translate-y-9 z-2 opacity-10"/>
+            <img src={blackLines} alt="Barbell Logo" className="absolute hidden lg:block -top-[5rem] -left-[20rem] -translate-y-9 z-2 opacity-15" width={500}/>
 
-        <div className="absolute top-0 left-2 2xl:left-0 w-full h-full -translate-y-9 z-2 opacity-10">
-            <img src={companyLogo} alt="Barbell Logo"/>
-        </div>
-
-        <MouseParallax isAbsolutelyPositioned>
-            <div className="hidden pointer-events-none lg:block z-1">
-                <img src={barbellIcon} alt="Barbell Icon" width={100} height={80} className="absolute right-[7rem] translate-y-[7rem]"/>
-                <img src={dumbellsIcon} alt="Dumbell Icon" width={80} height={80} className="absolute left-0 -translate-y-10"/>
-                <img src={plateIcon} alt="Plate Icon" width={80} height={80} className="absolute left-[5rem] translate-y-[7rem]"/>
-                <img src={benchpressIcon} alt="BenchPress Icon" width={100} height={80} className="absolute right-[2rem] -translate-y-10"/>
-            </div> 
-        </MouseParallax>
+            <MouseParallax isAbsolutelyPositioned>
+                <div className="hidden pointer-events-none lg:block z-1">
+                    <img src={barbellIcon} alt="Barbell Icon" width={100} height={80} className="absolute right-[7rem] translate-y-[7rem] 2xl:-right-[3rem]"/>
+                    <img src={dumbellsIcon} alt="Dumbell Icon" width={80} height={80} className="absolute left-0 -translate-y-10 2xl:-left-[8rem]"/>
+                    <img src={plateIcon} alt="Plate Icon" width={80} height={80} className="absolute left-[5rem] translate-y-[7rem] 2xl:-left-[3rem]"/>
+                    <img src={benchpressIcon} alt="BenchPress Icon" width={100} height={80} className="absolute right-[2rem] -translate-y-10 2xl:-right-[8rem]"/>
+                </div> 
+            </MouseParallax>
      
-
         </div>
 
     </Section>
