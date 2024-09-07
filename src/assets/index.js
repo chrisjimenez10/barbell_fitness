@@ -5,6 +5,7 @@ import barbellIcon from "../images/barbell_sm.png";
 import dumbellsIcon from "../images/dumbells_sm.png";
 import plateIcon from "../images/plate_sm.png";
 import benchpressIcon from "../images/benchpress_sm.png";
+import blackLines from "../images/black_lines.png";
 
 
 export {
@@ -14,4 +15,5 @@ export {
     dumbellsIcon,
     plateIcon,
     benchpressIcon,
+    blackLines,
 };
