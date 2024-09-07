@@ -1,4 +1,5 @@
 import Section from "./Section";
+import GradientLight from "./design/GradientLight";
 import { healthyLinks } from "../constants";
 
 const LearnMore = () => {
@@ -13,7 +14,11 @@ const LearnMore = () => {
                                 <h5 className="h5 mb-5">{item.title}</h5>
                                 <p className="body-2 mb-6 text-n-3">{item.description}</p>
                             </div>
+
+                        {item.light && <GradientLight />}
+
                         </div>
+
                     )
                 })}
             </div>
