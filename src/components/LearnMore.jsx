@@ -6,6 +6,7 @@ import GradientLight from "./design/GradientLight";
 import { healthyLinks } from "../constants";
 import Button from "./Button";
 
+
 const LearnMore = () => {
   return (
     <Section id="learnmore">
@@ -18,13 +19,11 @@ const LearnMore = () => {
                             <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
                                 <h5 className="h5 mb-5">{item.title}</h5>
                                 <p className="body-2 mb-6 text-n-3">{item.description}</p>
-                                <Button white href={item.url}>{item.btn}</Button>
+                                <Button white href={item.url}>{item.btn}</Button>                           
                             </div>
 
                         {item.light && <GradientLight />}
-
                         </div>
-
                     )
                 })}
             </div>
