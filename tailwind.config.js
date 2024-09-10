@@ -58,6 +58,7 @@ export default {
       },
       transitionDuration: {
         DEFAULT: "200ms",
+        slow: "500ms"
       },
       transitionTimingFunction: {
         DEFAULT: "linear",

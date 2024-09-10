@@ -8,6 +8,8 @@ import benchpressIcon from "../images/benchpress_sm.png";
 import blackLines from "../images/black_lines.png";
 import barbellSet from "../images/barbell_set.jpg";
 import trainerPhoto from "../images/trainer.jpg";
+import grid from "../images/grid.png";
+import trainerPhoto2 from "../images/trainer_two.jpg";
 
 
 
@@ -20,6 +22,8 @@ export {
     benchpressIcon,
     blackLines,
     barbellSet,
-    trainerPhoto
+    trainerPhoto,
+    grid,
+    trainerPhoto2
 
 };
