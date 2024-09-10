@@ -7,6 +7,7 @@ import plateIcon from "../images/plate_sm.png";
 import benchpressIcon from "../images/benchpress_sm.png";
 import blackLines from "../images/black_lines.png";
 import barbellSet from "../images/barbell_set.jpg";
+import trainerPhoto from "../images/trainer.jpg";
 
 
 
@@ -19,5 +20,6 @@ export {
     benchpressIcon,
     blackLines,
     barbellSet,
+    trainerPhoto
 
 };

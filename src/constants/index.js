@@ -46,7 +46,10 @@ export const healthyLinks = [
         btn: "Learn More",
         url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10828695/",
         backgroundUrl: "../assets/card-1.svg",
-        description: "Working with a certified personal trainer is essential for achieving healthy life and fitness goals as they provide expert guidance, personalized support, and accountability. A trainer helps create customized workout plans, teaches proper form and technique, and offers motivation and encouragement. They also monitor progress, adjust plans as needed, and provide valuable insights on nutrition and lifestyle habits. With a trainer's guidance, individuals can safely and effectively reach their goals, avoid plateaus and injuries, and develop a sustainable, healthy relationship with exercise and wellness. This leads to enhanced overall fitness, increased confidence, and a better quality of life",
+        description: "Working with a certified personal trainer is essential for achieving healthy life and fitness goals as they provide expert guidance, personalized support, and accountability. A trainer helps create customized workout plans, teaches proper form and technique, and offers motivation and encouragement. They also monitor progress, adjust plans as needed, and provide valuable insights on nutrition and lifestyle habits. With a trainer's guidance, individuals can safely and effectively reach their goals, avoid plateaus and injuries, and develop a sustainable, healthy relationship with exercise and wellness. This leads to enhanced overall fitness, increased confidence, and a better quality of life.",
         light: true,
     }
-]
+];
+
+export const trainerBio = `As a certified personal trainer and seasoned powerlifting competitor, Alex brings a unique combination of expertise and passion to helping clients achieve their fitness goals. With multiple appearances at the World Powerlifting Championships (WPC) and a proven track record of success on the international stage, Alex has honed his knowledge of effective training techniques and strategies for optimal performance.
+With years of experience training clients in both powerlifting and general fitness, Alex has helped numerous individuals improve their overall health, increase strength, and enhance their well-being. Their expertise extends beyond the gym, as they take a holistic approach to fitness, focusing on nutrition, recovery, and mindset to support clients in achieving their goals.`;
