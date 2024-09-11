@@ -2,7 +2,7 @@
 import Section from "./Section";
 import Header from "./Header";
 //Design Components
-import GradientLight from "./design/GradientLight";
+import { GradientLight } from "./design/GradientLight";
 import { healthyLinks } from "../constants";
 import Button from "./Button";
 

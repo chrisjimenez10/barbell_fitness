@@ -14,7 +14,8 @@
     "react-dom": "^18.3.1",
     "react-just-parallax": "^3.1.16",
     "react-router-dom": "^6.26.1",
-    "scroll-lock": "^2.1.5"
+    "scroll-lock": "^2.1.5",
+    "swiper": "^11.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Section from "./Section";
 import Button from "./Button";
 //Design Components
-import GradientLight from "./design/GradientLight";
+import {GradientLight} from "./design/GradientLight";
 
 
 const Error = () => {
@@ -19,7 +19,7 @@ const Error = () => {
           </Link>
         </div>
 
-        <GradientLight/>
+        <GradientLight opacity/>
        
     </Section>
   )
