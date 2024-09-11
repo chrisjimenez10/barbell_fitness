@@ -19,7 +19,7 @@ const Error = () => {
           </Link>
         </div>
 
-        <GradientLight/>
+        <GradientLight opacity/>
        
     </Section>
   )

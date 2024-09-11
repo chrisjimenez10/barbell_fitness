@@ -21,7 +21,7 @@ const Services = () => {
                     <div className="bg-conic-gradient2 rounded-2xl h-full w-full">
                       <img src={item.image} alt="Service Image" className="p-1 rounded-2xl w-full h-full object-cover"/>
                     </div>
-                    <h4 className="h4 py-3 uppercase text-center">{item.title}</h4>
+                    <h4 className="h4 py-3 uppercase text-center text-n-1/80">{item.title}</h4>
                   </div>
                 )
               })}
