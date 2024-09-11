@@ -2,13 +2,12 @@
     // Swiper.js Library (https://swiperjs.com/react#installation)
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { services } from "../constants";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 
-const Carousel = () => {
+const Carousel = ({slides}) => {
 
   return (
     <>
@@ -29,26 +28,31 @@ const Carousel = () => {
             navigation={{
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next",
+              }}
+            //The pagination prop displays and activates the bulets indicating slides
+            pagination={{
+                clickable: true,
             }}
         >
-            {services.map((item)=>{
+            {slides.map((item)=>{
                 return(
                     <SwiperSlide key={item.id}>
                         <div className="flex flex-col items-center">
                             <div className="bg-conic-gradient2 rounded-2xl">
                                 <img src={item.image} alt={item.image} className="p-1 rounded-2xl"/>
                             </div>
-                            <h4 className="h4 mt-3">{item.title}</h4>
-                        </div>
+                            <h4 className="h4 mt-3 uppercase">{item.title}</h4>
+                        </div>                     
                     </SwiperSlide>
                 )
             })}
             <div className="swiper-pagination"></div>
-
         </Swiper>
         
-        <div className="swiper-button-prev text-n-14" />
-        <div className="swiper-button-next text-n-14"/>
+        {/* Arrows DO NOT work yet */}
+        <div id="swiper-button-prev" className="swiper-button-prev text-n-14 hidden lg:block" />
+        <div id="swiper-button-next" className="swiper-button-next text-n-14 hidden lg:block"/>
+         
     </>
   )
 }

@@ -40,3 +40,21 @@
   animation: fadeIn 4s ease-in-out;
 }
 
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination {
+  transform: translateY(-250%);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FF6666;
+  opacity: 1;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  z-index: 1;
+}
+
