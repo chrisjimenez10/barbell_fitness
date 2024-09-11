@@ -5,7 +5,6 @@ import Section from "./Section";
 //Imports
 import { services } from "../constants";
 
-
 const Services = () => {
   return (
     <Section id="services" className="mt-[5rem]">
