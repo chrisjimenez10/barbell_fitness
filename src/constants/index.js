@@ -61,21 +61,25 @@ export const services = [
         id: 0,
         title: "Personalized Training",
         image: personalizedTraining,
+       
     },
     {
         id: 1,
         title: "Group Fitness Classes",
         image: groupFitness,
+    
     },
     {
         id: 2,
         title: "Nutritional Guidance",
         image: nutritionalGuidance,
+        
     },
     {
         id: 3,
         title: "Weight Loss Programs",
         image: weightLoss,
+        
     }
 ]
 

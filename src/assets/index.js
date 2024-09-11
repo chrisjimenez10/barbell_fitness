@@ -14,7 +14,7 @@ import personalizedTraining from "../images/personalized_training.png";
 import groupFitness from "../images/group_fitness.png";
 import nutritionalGuidance from "../images/nutritional_guidance.png";
 import weightLoss from "../images/weight_loss.png";
-import horizontalLine from "./horizontal-line.svg";
+
 
 
 
@@ -34,5 +34,5 @@ export {
     groupFitness,
     nutritionalGuidance,
     weightLoss,
-    horizontalLine
+
 };
