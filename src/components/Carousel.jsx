@@ -9,6 +9,8 @@ import "swiper/css/navigation";
 
 const Carousel = ({slides}) => {
 
+    //The slides prop MUST be an array of objects with the following fields: id, title, image
+
   return (
     <>
         <Swiper

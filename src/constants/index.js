@@ -93,7 +93,7 @@ export const services = [
         image: weightLoss,
         
     }
-]
+];
 
 {/* <iframe className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FJimAlex17%2Fvideos%2F387350214336887%2F&show_text=false&width=380&t=0&autoplay=1&muted=1&loop=1" style={{border:"none", overflow:"hidden", width:"100%", height:"100%"}} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>  */}
 
@@ -128,4 +128,29 @@ export const certificationIcons = [
         image: aapfIcon,
         url: "https://worldpowerliftingcongress.com/about-apf/#",
     },
-]
+];
+
+export const testimonies = [
+    {
+        id: 0,
+        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamantha.taylor.52493%2Fposts%2Fpfbid0cjMncwFLAnqR7JWpoAk6Do9gCjiqA4qjVajvxeA428TRnMKEuitfVWxpvJ3ruR5yl&show_text=true&width=500",
+        styles: "xl:translate-x-[5rem]",
+    },
+    {
+        id: 1,
+        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamantha.taylor.52493%2Fposts%2Fpfbid0cjMncwFLAnqR7JWpoAk6Do9gCjiqA4qjVajvxeA428TRnMKEuitfVWxpvJ3ruR5yl&show_text=true&width=500",
+        styles: "2xl:translate-x-[5rem]",
+    },
+    {
+        id: 2,
+        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamantha.taylor.52493%2Fposts%2Fpfbid0cjMncwFLAnqR7JWpoAk6Do9gCjiqA4qjVajvxeA428TRnMKEuitfVWxpvJ3ruR5yl&show_text=true&width=500",
+        styles: "2xl:-translate-x-[5rem]",
+    },
+    {
+        id: 3,
+        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamantha.taylor.52493%2Fposts%2Fpfbid0cjMncwFLAnqR7JWpoAk6Do9gCjiqA4qjVajvxeA428TRnMKEuitfVWxpvJ3ruR5yl&show_text=true&width=500",
+        styles: "xl:-translate-x-[5rem] 2xl:-translate-x-[2rem]",
+    }
+];
+
+export const words = ["Success", "Triumphant", "Uplifting", "Amazing"];

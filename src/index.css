@@ -40,6 +40,10 @@
   animation: fadeIn 4s ease-in-out;
 }
 
+.animate-fadeIn-2 {
+  animation: fadeIn 3s ease-in-out;
+}
+
 .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 0.5;
