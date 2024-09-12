@@ -22,12 +22,14 @@ const Trainer = () => {
                 <div className="bg-n-14/80 rounded-md p-5 mx-5">
                   <p className="body-2 text-left">{trainerBio}</p>                                 
                 </div>
-                <div className="flex gap-5 items-center justify-evenly translate-y-15">
-                  {certificationIcons.map((item, index)=>{
+                <div className="flex flex-wrap gap-5 items-center justify-center translate-y-15">
+                  {certificationIcons.map((item)=>{
                     return(
-                      <div key={index} className="">
-                        <img src={item} alt="" width={90} height={80} className="rounded-full"/>
-                      </div>
+                      <a href={item.url} target="_blank">
+                        <div key={item.id} className="bg-n-6 rounded-full transition-transform hover:bg-n-5 hover:-translate-y-3">
+                          <img src={item.image} alt="Certification Icons" width={90} height={80} className="rounded-full p-2 opacity-80 transition-opacity hover:opacity-100"/>
+                        </div>
+                      </a>                     
                     )
                   })}
                 </div>                            

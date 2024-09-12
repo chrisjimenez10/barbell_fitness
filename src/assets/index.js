@@ -18,6 +18,8 @@ import aceIcon from "../images/ace_logo.png";
 import apfIcon from "../images/apf_logo.png";
 import concordiaIcon from "../images/concordia_logo.png";
 import tritonIcon from "../images/triton_logo.png";
+import wpcIcon from "../images/wpc_logo.png";
+import aapfIcon from "../images/aapf_logo.png";
 
 
 export {
@@ -40,5 +42,7 @@ export {
     apfIcon,
     concordiaIcon,
     tritonIcon,
+    wpcIcon,
+    aapfIcon,
     
 };
