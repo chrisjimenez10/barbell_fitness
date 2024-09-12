@@ -1,16 +1,20 @@
 //Custom Components
 import Section from "./Section";
+import Carousel from "./Carousel";
 //Design Components
 import ChangeWord from "./design/ChangeWord";
 //Imports
 import { testimonies } from "../constants";
 import { words } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const Testimonies = () => {
 
+  //Parallax Ref
   const parallaxref = useRef(null);
+
+
 
   return (
     <Section id="testimonies" className="mt-[5rem] bg-n-14">
@@ -18,6 +22,9 @@ const Testimonies = () => {
 
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
           {/* UP to xl screen size it's a carousel */}
+
+          <Carousel slides={testimonies} slidesPerView className="xl:hidden translate-y-10"/>
+
           <ScrollParallax>
             <div className="hidden xl:flex justify-between flex-wrap gap-15 translate-y-[4rem]" ref={parallaxref}>
                 {testimonies.map((item)=>{
@@ -28,7 +35,6 @@ const Testimonies = () => {
                 })}
               </div>
           </ScrollParallax>
-            
 
         </div>
     </Section>
