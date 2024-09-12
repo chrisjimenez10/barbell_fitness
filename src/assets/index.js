@@ -14,8 +14,10 @@ import personalizedTraining from "../images/personalized_training.png";
 import groupFitness from "../images/group_fitness.png";
 import nutritionalGuidance from "../images/nutritional_guidance.png";
 import weightLoss from "../images/weight_loss.png";
-
-
+import aceIcon from "../images/ace_logo.png";
+import apfIcon from "../images/apf_logo.png";
+import concordiaIcon from "../images/concordia_logo.png";
+import tritonIcon from "../images/triton_logo.png";
 
 
 export {
@@ -34,5 +36,9 @@ export {
     groupFitness,
     nutritionalGuidance,
     weightLoss,
-
+    aceIcon,
+    apfIcon,
+    concordiaIcon,
+    tritonIcon,
+    
 };
