@@ -25,9 +25,9 @@ const Trainer = () => {
                 <div className="flex flex-wrap gap-5 items-center justify-center translate-y-15">
                   {certificationIcons.map((item)=>{
                     return(
-                      <a href={item.url} target="_blank">
-                        <div key={item.id} className="bg-n-6 rounded-full transition-transform hover:bg-n-5 hover:-translate-y-3">
-                          <img src={item.image} alt="Certification Icons" width={90} height={80} className="rounded-full p-2 opacity-80 transition-opacity hover:opacity-100"/>
+                      <a href={item.url} target="_blank" key={item.id}>
+                        <div className="bg-n-6 rounded-full transition-transform hover:bg-n-5 hover:-translate-y-3">
+                          <img src={item.image} alt="Certification Icons" className="rounded-full p-2 opacity-80 transition-opacity hover:opacity-100 w-[60px] h-[60px] lg:w-[90px] lg:h-[90px]"/>
                         </div>
                       </a>                     
                     )

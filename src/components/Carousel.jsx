@@ -12,7 +12,6 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
 
     //The slides prop MUST be an array of objects with the following fields: id, title, image
 
-
     //State
     const [slidesView, setSlidesView] = useState(1);
         //Here, we are using the window object and innerWidth property to capture the CURRENT width screen size
@@ -61,7 +60,9 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
               }}
             //The pagination prop displays and activates the bulets indicating slides
             pagination={{
-                clickable: true,
+                // Disabling class for "Testimonies" Carousel so bullets are not in view
+                el: slidesPerView ? "" : ".swiper-pagination",
+                clickable: true,      
             }}
         >
             {slides.map((item)=>{
@@ -84,7 +85,9 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
                     </SwiperSlide>
                 )
             })}
-            <div className="swiper-pagination"></div>
+                     
+            <div className="swiper-pagination"/>
+           
         </Swiper>
         
         {/* Arrows DO NOT work yet */}
