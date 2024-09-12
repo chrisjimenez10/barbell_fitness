@@ -21,12 +21,12 @@ const About = () => {
         <div className="container relative" ref={parallaxRef}>
            
             <div className="flex flex-col gap-5 text-center pt-5 z-10 items-center">
-                <h1 className="text-[1.5rem] sm:h1 uppercase font-extrabold text-n-1">Make Healthier Choices</h1>
-                <p className="body-1 sm:h6 md:max-w-md text-n-1/90 pt-5">Guiding people to a stronger, leaner body. Creating good habits and healthy relationship with their favorite foods! Earning the body they work for and deserve</p>
+                <h1 className="h1 uppercase font-extrabold text-n-1">Make <span style={{color: "#0E0C15"}}>Healthier</span> Choices</h1>
+                <h6 className="h6 md:max-w-md text-n-1 pt-5">Guiding people to a stronger, leaner body. Creating good habits and healthy relationship with their favorite foods! Earning the body they work for and deserve</h6>
                 <Link to="/learnmore"><Button white className="mt-5">Learn More</Button></Link>
             </div>
         
-            <img src={companyLogo} alt="Barbell Logo" className="absolute top-0 right-0 z-2 opacity-10"/>
+            <img src={companyLogo} alt="Barbell Logo" className="absolute top-0 translate-y-[2rem] right-0 z-2 rounded-2xl opacity-5 w-[18rem] lg:w-[20rem] xl:w-[25rem] xl:-translate-y-[2rem]"/>
             <img src={blackLines} alt="Barbell Logo" className="absolute hidden lg:block -top-[5rem] -left-[20rem] -translate-y-9 z-2 opacity-15" width={600}/>
 
             <MouseParallax isAbsolutelyPositioned>

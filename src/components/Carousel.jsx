@@ -84,10 +84,8 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
                         </div>                     
                     </SwiperSlide>
                 )
-            })}
-                     
-            <div className="swiper-pagination"/>
-           
+            })}                   
+            <div className="swiper-pagination"/>          
         </Swiper>
         
         {/* Arrows DO NOT work yet */}
@@ -98,4 +96,4 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
   )
 }
 
-export default Carousel
+export default Carousel;
