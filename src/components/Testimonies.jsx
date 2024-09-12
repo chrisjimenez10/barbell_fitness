@@ -3,6 +3,7 @@ import Section from "./Section";
 import Carousel from "./Carousel";
 //Design Components
 import ChangeWord from "./design/ChangeWord";
+import Arrow from "./design/Arrow";
 //Imports
 import { testimonies } from "../constants";
 import { words } from "../constants";
@@ -17,7 +18,7 @@ const Testimonies = () => {
   return (
     <Section id="testimonies" className="mt-[5rem] bg-n-14">
         <div className="container relative">
-
+         
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
 
           {/* UP to xl screen size it's a carousel */}
@@ -33,6 +34,12 @@ const Testimonies = () => {
                 })}
               </div>
           </ScrollParallax>
+
+          {/* WORK on positioning and styling this div which will be a link to another component with more reviews/success stories */}
+          <div className="flex">
+            <h1 className="">More</h1>
+            <Arrow />
+          </div>
 
         </div>
     </Section>
