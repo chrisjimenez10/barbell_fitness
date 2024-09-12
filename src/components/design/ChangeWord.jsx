@@ -1,8 +1,7 @@
 //Imports
 import { useState, useEffect } from "react";
-import { words } from "../../constants";
 
-const ChangeWord = ({children, className}) => {
+const ChangeWord = ({children, className, words}) => {
     //The children prop are the CONSTANT words
     //The jack prop is the word that will alternate
 
@@ -38,7 +37,7 @@ const ChangeWord = ({children, className}) => {
 
   return (
     <h1 className={`h1 font-extrabold ${className || ""}`}>
-        <span id="wordToChange" className={`text-n-8 `}>{currentWord}</span> {children}
+        <span id="wordToChange" className="text-n-8">{currentWord}</span> {children}
     </h1>
   )
 }
