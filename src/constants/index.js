@@ -1,4 +1,13 @@
-import { personalizedTraining, groupFitness, nutritionalGuidance, weightLoss } from "../assets";
+import { 
+    personalizedTraining, 
+    groupFitness, 
+    nutritionalGuidance, 
+    weightLoss,
+    apfIcon,
+    aceIcon,
+    concordiaIcon,
+    tritonIcon
+} from "../assets";
 
 export const navigation = [
     {
@@ -84,3 +93,5 @@ export const services = [
 ]
 
 {/* <iframe className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FJimAlex17%2Fvideos%2F387350214336887%2F&show_text=false&width=380&t=0&autoplay=1&muted=1&loop=1" style={{border:"none", overflow:"hidden", width:"100%", height:"100%"}} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>  */}
+
+export const certificationIcons = [aceIcon, apfIcon, concordiaIcon, tritonIcon]

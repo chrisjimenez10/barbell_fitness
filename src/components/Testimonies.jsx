@@ -5,7 +5,7 @@ const Testimonies = () => {
   return (
     <Section id="testimonies" className="mt-[5rem]">
         <div className="container relative">
-            <h1 className="text-center">Testimonies</h1>
+            <h1 className="h1 text-center">Testimonies</h1>
             
         </div>
     </Section>

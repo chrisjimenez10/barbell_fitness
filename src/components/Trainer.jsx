@@ -1,6 +1,6 @@
 import Section from "./Section";
 import { trainerPhoto, grid, trainerPhoto2 } from "../assets";
-import { trainerBio } from "../constants";
+import { trainerBio, certificationIcons } from "../constants";
 
 const Trainer = () => {
   return (
@@ -21,7 +21,16 @@ const Trainer = () => {
                 <h2 className="h2 text-center uppercase ">About Me</h2>
                 <div className="bg-n-14/80 rounded-md p-5 mx-5">
                   <p className="body-2 text-left">{trainerBio}</p>                                 
-                </div>               
+                </div>
+                <div className="flex gap-5 items-center justify-evenly translate-y-15">
+                  {certificationIcons.map((item, index)=>{
+                    return(
+                      <div key={index} className="">
+                        <img src={item} alt="" width={90} height={80} className="rounded-full"/>
+                      </div>
+                    )
+                  })}
+                </div>                            
             </div>
 
         </div>
