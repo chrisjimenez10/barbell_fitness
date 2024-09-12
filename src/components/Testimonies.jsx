@@ -14,19 +14,7 @@ const Testimonies = () => {
   //Parallax Ref
   const parallaxref = useRef(null);
 
-  //State
-  const [slidesView, setSlidesView] = useState(1);
-    //Here, we are using the window object and innerWidth property to capture the CURRENT width screen size
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  //Functions
-  useEffect(()=>{
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return ()=> window.removeEventListener("resize", handleResize);
-  },[]);
 
   return (
     <Section id="testimonies" className="mt-[5rem] bg-n-14">
@@ -35,7 +23,7 @@ const Testimonies = () => {
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
           {/* UP to xl screen size it's a carousel */}
 
-          <Carousel slides={testimonies} slidesPerView={slidesView} className={`md:${()=> setSlidesView(2)} xl:hidden`}/>
+          <Carousel slides={testimonies} slidesPerView className="xl:hidden translate-y-10"/>
 
           <ScrollParallax>
             <div className="hidden xl:flex justify-between flex-wrap gap-15 translate-y-[4rem]" ref={parallaxref}>

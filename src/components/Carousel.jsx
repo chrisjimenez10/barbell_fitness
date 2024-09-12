@@ -5,11 +5,39 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useState, useEffect } from "react";
 
 
 const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
 
     //The slides prop MUST be an array of objects with the following fields: id, title, image
+
+
+    //State
+    const [slidesView, setSlidesView] = useState(1);
+        //Here, we are using the window object and innerWidth property to capture the CURRENT width screen size
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    //Functions
+    useEffect(()=>{
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth); //Here, we UPDATE the windowWidth state with the current inner width by capturing that value (which is a number representing pixels)
+    };
+    //Here, we are attaching an event listener to the "resize" event and executing the logic inside handleResize function --> This will triger the handleResize funciton every time the screen is resized
+    window.addEventListener("resize", handleResize);
+    //Here, we are using a "cleanup" arro function that removes the event listener when the component unmounts --> This prevents memory leak and ensures event listener is NOT called unnecessarily
+    return ()=> window.removeEventListener("resize", handleResize);
+    },[]);
+
+    useEffect(()=>{
+    //Here, we set the numerical value (representing pixels) that will change slides per view based on state of windowWidth (screen size)
+    if(windowWidth >= 768){
+        setSlidesView(2);
+    }else{
+        setSlidesView(1);
+    }
+    },[windowWidth]);
+
 
   return (
     <div className={`${className || ""}`}>
@@ -17,7 +45,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
             // The spaceBetween prop is used to assign the distance between each slide
             spaceBetween={50}
             // The slidesPerView prop is used to assign how many slides are visible at a time
-            slidesPerView={slidesPerView}
+            slidesPerView={slidesPerView ? slidesView : 1}
             // We use the loop + speed props to continously slide through all the slides
             loop={true}
             speed={10000}
