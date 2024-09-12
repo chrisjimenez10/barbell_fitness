@@ -6,7 +6,10 @@ import {
     apfIcon,
     aceIcon,
     concordiaIcon,
-    tritonIcon
+    tritonIcon,
+    wpcIcon,
+    aapfIcon,
+
 } from "../assets";
 
 export const navigation = [
@@ -70,13 +73,13 @@ export const services = [
         id: 0,
         title: "Personalized Training",
         image: personalizedTraining,
-       
+      
     },
     {
         id: 1,
         title: "Group Fitness Classes",
         image: groupFitness,
-    
+     
     },
     {
         id: 2,
@@ -94,4 +97,35 @@ export const services = [
 
 {/* <iframe className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FJimAlex17%2Fvideos%2F387350214336887%2F&show_text=false&width=380&t=0&autoplay=1&muted=1&loop=1" style={{border:"none", overflow:"hidden", width:"100%", height:"100%"}} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>  */}
 
-export const certificationIcons = [aceIcon, apfIcon, concordiaIcon, tritonIcon]
+export const certificationIcons = [
+    {
+        id: 0,
+        image: aceIcon,
+        url: "https://www.acefitness.org/about-ace/",
+    },
+    {
+        id: 1,
+        image: apfIcon,
+        url: "https://worldpowerliftingcongress.com/about-apf/#",
+    },
+    {
+        id: 2,
+        image: concordiaIcon,
+        url: "https://www.cuchicago.edu/",
+    },
+    {
+        id: 3,
+        image: tritonIcon,
+        url: "https://www.triton.edu/about/points-of-pride/cutting-edge-facilities/fitness-center/",
+    },
+    {
+        id: 4,
+        image: wpcIcon,
+        url: "https://worldpowerliftingcongress.com/",
+    },
+    {
+        id: 5,
+        image: aapfIcon,
+        url: "https://worldpowerliftingcongress.com/about-apf/#",
+    },
+]
