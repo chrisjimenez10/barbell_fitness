@@ -152,3 +152,5 @@ export const testimonies = [
         styles: "xl:-translate-x-[5rem] 2xl:-translate-x-[2rem]",
     }
 ];
+
+export const words = ["Success", "Triumphant", "Uplifting", "Amazing"];
