@@ -10,7 +10,7 @@ const Trainer = () => {
 
             {/* Wrap Image in div/container element and give "mx-auto" to center image horizontally and "max-w-fit" to maintain aspect ratio across screen sizes */}
             <div className="relative mx-auto max-w-fit flex flex-col items-center gap-5 animate-fadeIn">
-                <h1 className="h1 uppercase bg-n-14/80 rounded-md p-3"><span style={{color: "black"}}>A</span>lex <span style={{color: "black"}}>J</span>imenez</h1>
+                <h1 className="h1 uppercase bg-n-14/80 rounded-md p-3"><span style={{color: "#0E0C15"}}>A</span>lex <span style={{color: "#0E0C15"}}>J</span>imenez</h1>
                 {/* We can apply hover effect on sibling elements by providing the group class to the parent, then we can reference each sibling element with group-... to ensure proper hiding/show effect */}
                 <div className="relative group">
                   <img src={trainerPhoto2} alt="Trainer" className="overflow-hidden px-5 transition-opacity duration-slow group-hover:opacity-0" width={600} height={500}/>
@@ -25,9 +25,9 @@ const Trainer = () => {
                 <div className="flex flex-wrap gap-5 items-center justify-center translate-y-15">
                   {certificationIcons.map((item)=>{
                     return(
-                      <a href={item.url} target="_blank">
-                        <div key={item.id} className="bg-n-6 rounded-full transition-transform hover:bg-n-5 hover:-translate-y-3">
-                          <img src={item.image} alt="Certification Icons" width={90} height={80} className="rounded-full p-2 opacity-80 transition-opacity hover:opacity-100"/>
+                      <a href={item.url} target="_blank" key={item.id}>
+                        <div className="bg-n-6 rounded-full transition-transform hover:bg-n-5 hover:-translate-y-3">
+                          <img src={item.image} alt="Certification Icons" className="rounded-full p-2 opacity-80 transition-opacity hover:opacity-100 w-[60px] h-[60px] lg:w-[90px] lg:h-[90px]"/>
                         </div>
                       </a>                     
                     )

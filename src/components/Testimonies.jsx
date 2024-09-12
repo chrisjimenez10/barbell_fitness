@@ -7,22 +7,20 @@ import ChangeWord from "./design/ChangeWord";
 import { testimonies } from "../constants";
 import { words } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 
 const Testimonies = () => {
 
   //Parallax Ref
   const parallaxref = useRef(null);
 
-
-
   return (
     <Section id="testimonies" className="mt-[5rem] bg-n-14">
         <div className="container relative">
 
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
-          {/* UP to xl screen size it's a carousel */}
 
+          {/* UP to xl screen size it's a carousel */}
           <Carousel slides={testimonies} slidesPerView className="xl:hidden translate-y-10"/>
 
           <ScrollParallax>

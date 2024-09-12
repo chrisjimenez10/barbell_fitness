@@ -49,6 +49,7 @@
   opacity: 0.5;
 }
 
+/* Position of the bullets */
 .swiper-pagination {
   transform: translateY(-250%);
 }
