@@ -1,12 +1,11 @@
+//Custom Components
 import Section from "./Section";
 import Button from "./Button";
-
+//Imports
 import { companyLogo, barbellIcon, dumbellsIcon, plateIcon, benchpressIcon, blackLines } from "../assets";
-
 import { MouseParallax } from "react-just-parallax";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-
 
 
 const About = () => {
