@@ -7,17 +7,17 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 
-const Carousel = ({slides}) => {
+const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
 
     //The slides prop MUST be an array of objects with the following fields: id, title, image
 
   return (
-    <>
+    <div className={`${className || ""}`}>
         <Swiper
             // The spaceBetween prop is used to assign the distance between each slide
             spaceBetween={50}
             // The slidesPerView prop is used to assign how many slides are visible at a time
-            slidesPerView={1}
+            slidesPerView={slidesPerView}
             // We use the loop + speed props to continously slide through all the slides
             loop={true}
             speed={10000}
@@ -40,10 +40,18 @@ const Carousel = ({slides}) => {
                 return(
                     <SwiperSlide key={item.id}>
                         <div className="flex flex-col items-center">
-                            <div className="bg-conic-gradient2 rounded-2xl">
-                                <img src={item.image} alt={item.image} className="p-1 rounded-2xl"/>
+                            <div className={`${bgGradient ? "bg-conic-gradient2" : ""} rounded-2xl`}>
+                                {item.image && (
+                                    <img src={item.image} alt="Slide Image" className="p-1 rounded-2xl"/>
+                                )}
+                                {item.url && (
+                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}}  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                    className={`pointer-events-none max-w-full ${item.styles ? item.styles : ""}`}/>
+                                )}
                             </div>
-                            <h4 className="h4 mt-3 uppercase">{item.title}</h4>
+                            {item.title && (
+                                <h4 className="h4 mt-3 uppercase">{item.title}</h4>
+                            )}
                         </div>                     
                     </SwiperSlide>
                 )
@@ -55,7 +63,7 @@ const Carousel = ({slides}) => {
         <div id="swiper-button-prev" className="swiper-button-prev text-n-14 hidden lg:block" />
         <div id="swiper-button-next" className="swiper-button-next text-n-14 hidden lg:block"/>
          
-    </>
+    </div>
   )
 }
 
