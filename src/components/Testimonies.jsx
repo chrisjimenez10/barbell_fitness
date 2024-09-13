@@ -23,7 +23,7 @@ const Testimonies = () => {
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
 
           {/* UP to xl screen size it's a carousel */}
-          <Carousel slides={testimonies} slidesPerView className="xl:hidden translate-y-10"/>
+          <Carousel slides={testimonies} slidesPerView reverse className="xl:hidden translate-y-10"/>
 
           <div className="flex flex-col items-center">
             <ScrollParallax>

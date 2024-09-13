@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 import { useState, useEffect } from "react";
 
 
-const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
+const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
 
     //The slides prop MUST be an array of objects with the following fields: id, title, image
 
@@ -54,8 +54,9 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
                 // We want the autoplay to start instantly, so we set delay to zero
                 delay: 0,
                 disableOnInteraction: false,
+                reverseDirection: reverse ? true : false,
             }}
-            navigation={{               
+            navigation={{                
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next",
               }}
@@ -89,12 +90,10 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
             <div className="swiper-pagination"/>          
         </Swiper>
         
-        {/* Arrows DO WORK, and these divs are the previous/next arrows --> NOTE: These go OUTSIDE of the Swiper Component and are activated by the "navigation" prop we pass to the Swiper Component - We set the properties of prevEl/nextEl equal to the corresponding string values of the class name we want to give it --> These properties of the navigation prop (from Navigation Module) will make the arrows/divs BEHAVE like a button with an onClick() function that is triggered to move the slide */}
-        <div className="swiper-button-prev text-n-14 hidden lg:block" />
+        {/* Arrows DO WORK, and these divs are the previous/next arrows --> NOTE: These go OUTSIDE of the Swiper Component and are activated by the "navigation" prop we pass to the Swiper Component - We set the properties of prevEl/nextEl equal to the corresponding string values of the class name we want to give it --> These properties of the navigation prop (from Navigation Module) will make the arrows/divs BEHAVE like a button with an onClick() function that is triggered to move the slide --> NOTE: We can't really see that much effect of these arrows with AUTOPLAY activated */}
+        <div className={`swiper-button-prev text-n-14 hidden lg:block`} />
         <div className="swiper-button-next text-n-14 hidden lg:block" />
-
-        {/* NOTE: Our Carousel's pops */}
-         
+       
     </div>
   )
 }
