@@ -3,5 +3,7 @@
 
 
 ## Resources
-* [([Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API))]
+* [TailwindCSS]("https://tailwindcss.com/docs/installation")
+* [Swiper]("https://swiperjs.com/react")
+* [Canva]("https://www.canva.com/")
 
