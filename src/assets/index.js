@@ -22,7 +22,7 @@ import wpcIcon from "../images/wpc_logo.png";
 import aapfIcon from "../images/aapf_logo.png";
 import googleReviews from "../images/google_reviews.png"; //Divide to individual reviews (edit photo)
 import instagramPost from "../images/instagram_post.png"; //NOT used yet
-import copyIcon from "../images/copy_icon.png";
+
 
 
 export {
@@ -49,6 +49,6 @@ export {
     aapfIcon,
     googleReviews,
     instagramPost,
-    copyIcon,
+ 
 
 };

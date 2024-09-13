@@ -97,8 +97,6 @@ export const services = [
     }
 ];
 
-{/* <iframe className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FJimAlex17%2Fvideos%2F387350214336887%2F&show_text=false&width=380&t=0&autoplay=1&muted=1&loop=1" style={{border:"none", overflow:"hidden", width:"100%", height:"100%"}} allowfullscreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>  */}
-
 export const certificationIcons = [
     {
         id: 0,
@@ -160,11 +158,12 @@ export const words = ["Success", "Triumphant", "Uplifting", "Amazing"];
 
 export const contactInfo = {
     address: "13 Main St, Bensenville, IL 60106",
+    url: "https://www.google.com/maps/place/Barbell+Fitness+S%26C/@41.9573099,-87.9433679,17z/data=!3m1!4b1!4m6!3m5!1s0x880fb37d0cce2e8b:0x7c1b66e69b59929!8m2!3d41.9573099!4d-87.940793!16s%2Fg%2F11h0b969sh?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D",
     hours: {
         weekdays: "Monday - Saturday (7am - 8pm)",
         weekends: "Sunday (CLOSED)",
     },
     phone: "(708)-712-6316",
     email: "training@barbellfsc.com",
-}
+};
 
