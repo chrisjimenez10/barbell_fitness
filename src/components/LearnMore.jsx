@@ -34,4 +34,4 @@ const LearnMore = () => {
   )
 }
 
-export default LearnMore
+export default LearnMore;

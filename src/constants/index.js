@@ -157,3 +157,13 @@ export const testimonies = [
 ];
 
 export const words = ["Success", "Triumphant", "Uplifting", "Amazing"];
+
+export const contactInfo = {
+    address: "13 Main St, Bensenville, IL 60106",
+    hours: {
+        weekdays: "Monday - Saturday (7am - 8pm)",
+        weekends: "Sunday (CLOSED)",
+    },
+    phone: "(708)-712-6316",
+}
+

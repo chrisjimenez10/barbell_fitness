@@ -38,7 +38,7 @@ const Testimonies = () => {
             </ScrollParallax>
 
             <Link to="/success-stories">
-              <div className="flex translate-y-10 hover:underline decoration-n-8">            
+              <div className="flex translate-y-10 hover:underline decoration-n-8 xl:translate-y-20">            
                 <h6 className="h6 uppercase">Learn <span style={{color: "#0E0C15"}}>More</span></h6>             
                 <Arrow />
               </div>
