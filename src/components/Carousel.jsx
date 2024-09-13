@@ -1,10 +1,11 @@
 //Imports
     // Swiper.js Library (https://swiperjs.com/react#installation)
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import { useState, useEffect } from "react";
 
 
@@ -41,6 +42,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
   return (
     <div className={`${className || ""}`}>
         <Swiper
+            modules={[Pagination, Navigation, Autoplay]}          
             // The spaceBetween prop is used to assign the distance between each slide
             spaceBetween={50}
             // The slidesPerView prop is used to assign how many slides are visible at a time
@@ -48,13 +50,12 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
             // We use the loop + speed props to continously slide through all the slides
             loop={true}
             speed={10000}
-            modules={[Pagination, Navigation, Autoplay]}
             autoplay={{
                 // We want the autoplay to start instantly, so we set delay to zero
                 delay: 0,
                 disableOnInteraction: false,
             }}
-            navigation={{
+            navigation={{               
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next",
               }}
@@ -74,7 +75,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
                                     <img src={item.image} alt="Slide Image" className="p-1 rounded-2xl"/>
                                 )}
                                 {item.url && (
-                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}}  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}}  allowFullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
                                     className={`pointer-events-none max-w-full ${item.styles ? item.styles : ""}`}/>
                                 )}
                             </div>
@@ -88,9 +89,11 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
             <div className="swiper-pagination"/>          
         </Swiper>
         
-        {/* Arrows DO NOT work yet */}
-        <div id="swiper-button-prev" className="swiper-button-prev text-n-14 hidden lg:block" />
-        <div id="swiper-button-next" className="swiper-button-next text-n-14 hidden lg:block"/>
+        {/* Arrows DO WORK, and these divs are the previous/next arrows --> NOTE: These go OUTSIDE of the Swiper Component and are activated by the "navigation" prop we pass to the Swiper Component - We set the properties of prevEl/nextEl equal to the corresponding string values of the class name we want to give it --> These properties of the navigation prop (from Navigation Module) will make the arrows/divs BEHAVE like a button with an onClick() function that is triggered to move the slide */}
+        <div className="swiper-button-prev text-n-14 hidden lg:block" />
+        <div className="swiper-button-next text-n-14 hidden lg:block" />
+
+        {/* NOTE: Our Carousel's pops */}
          
     </div>
   )
