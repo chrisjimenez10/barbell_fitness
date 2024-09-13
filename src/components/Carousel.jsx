@@ -30,7 +30,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient}) => {
 
     useEffect(()=>{
     //Here, we set the numerical value (representing pixels) that will change slides per view based on state of windowWidth (screen size)
-    if(windowWidth >= 768){
+    if(windowWidth >= 768){ //md:768px
         setSlidesView(2);
     }else{
         setSlidesView(1);

@@ -7,6 +7,7 @@ import Error from "./components/Error";
 import Trainer from "./components/Trainer";
 import Services from "./components/Services";
 import Testimonies from "./components/Testimonies";
+import Contact from "./components/Contact";
 //Design Components
 import ButtonGradient from "./components/design/ButtonGradient";
 //Dynamic Routing
@@ -26,6 +27,7 @@ const App = () => {
             <Trainer />
             <Services />
             <Testimonies />
+            <Contact />
           </>} />
           <Route path="/learnmore" element={<LearnMore />} />
           <Route path="*" element={<Error />} />
