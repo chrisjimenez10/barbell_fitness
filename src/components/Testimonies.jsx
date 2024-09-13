@@ -1,9 +1,9 @@
 //Custom Components
 import Section from "./Section";
 import Carousel from "./Carousel";
+import Button from "./Button";
 //Design Components
 import ChangeWord from "./design/ChangeWord";
-import Arrow from "./design/Arrow";
 //Imports
 import { testimonies } from "../constants";
 import { words } from "../constants";
@@ -37,11 +37,8 @@ const Testimonies = () => {
               </div>         
             </ScrollParallax>
 
-            <Link to="/success-stories">
-              <div className="flex translate-y-10 hover:underline decoration-n-8 xl:translate-y-20">            
-                <h6 className="h6 uppercase xl:mt-[5rem]">Learn <span style={{color: "#0E0C15"}}>More</span></h6>             
-                <Arrow className="xl:mt-[5rem]"/>
-              </div>
+            <Link to="/success-stories">                       
+                <Button white className="mt-5 translate-y-5 lg:translate-y-10 xl:translate-y-[4rem] xl:-translate-x-5 2xl:-translate-x-7">Learn More</Button>           
             </Link>
           </div>
              

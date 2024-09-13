@@ -2,14 +2,13 @@
 import Section from "./Section";
 //Design Components
 //Imports
-import { copyIcon } from "../assets";
 import { contactInfo } from "../constants";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
 
     //Destructure
-    const {address, hours, phone, email} = contactInfo;
+    const {address, hours, phone, email, url} = contactInfo;
 
     //Functions
     const handleCopy = () => {
@@ -21,23 +20,25 @@ const Contact = () => {
     <Section id="contact">
 
         <div className="relative px-10">
-            <div className="bg-google-image opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem] rounded-md"/>
+            <a href={url} target="_blank">
+                <div className="bg-google-image opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem] rounded-md"/>
+            </a>
+            
 
             <div className="flex flex-col items-start md:flex-row md:justify-between body-1 gap-5">
                 <div className="flex flex-col items-start gap-2 text-n-1 mt-5">
-                    <h2 className="font-extrabold mb-2 border-b border-n-14">Address</h2>
-                    <div className="flex gap-3">
-                        <p className="text-n-1/80">{address}</p>
-                        <img src={copyIcon} alt="Copy Icon" className="w-[15px] h-[15px] translate-y-1 bg-n-1 rounded-md cursor-pointer" onClick={handleCopy}/>
-                    </div>
+                    <h2 className="font-extrabold mb-2 border-b border-n-14">Address</h2>               
+                    <p className="text-n-1/80">{address} <span onClick={handleCopy} className="cursor-pointer">📋</span></p>
                     <p className="text-n-1/80">{hours.weekdays}</p>
-                    <p className="text-n-1/80">{hours.weekends}</p>
+                    <p className="text-n-1/80">{hours.weekends.substring(0,7)}<span className="text-n-14">{hours.weekends.substring(7,15)}</span></p>
                 </div>
                 <div className="flex flex-col items-start md:items-end gap-2 text-n-1 mt-4">
-                    <h2 className=" font-extrabold mb-2 border-b border-n-14">Contact</h2>
-                    <p className=" text-n-1/80">{email}</p>
-                    <p className=" text-n-1/80">{phone}</p>
-                    
+                    <h2 className="font-extrabold mb-2 border-b border-n-14">Contact</h2>
+                    <p className="text-n-1/80">{email}</p>
+                    <p className="text-n-1/80">{phone}</p>
+                    <Link to="/message">
+                        <p className="text-n-1/80 transition-colors hover:text-n-14">Send Message 📧</p>          
+                    </Link>
                 </div>
             </div>
             
