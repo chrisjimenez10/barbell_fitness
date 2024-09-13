@@ -14,6 +14,8 @@ import personalizedTraining from "../images/personalized_training.png";
 import groupFitness from "../images/group_fitness.png";
 import nutritionalGuidance from "../images/nutritional_guidance.png";
 import weightLoss from "../images/weight_loss.png";
+import privateClasses from "../images/private_classes.png";
+import onlineTraining from "../images/online_training.jpg";
 import aceIcon from "../images/ace_logo.png";
 import apfIcon from "../images/apf_logo.png";
 import concordiaIcon from "../images/concordia_logo.png";
@@ -41,6 +43,8 @@ export {
     groupFitness,
     nutritionalGuidance,
     weightLoss,
+    privateClasses,
+    onlineTraining,
     aceIcon,
     apfIcon,
     concordiaIcon,

@@ -3,6 +3,8 @@ import {
     groupFitness, 
     nutritionalGuidance, 
     weightLoss,
+    onlineTraining,
+    privateClasses,
     apfIcon,
     aceIcon,
     concordiaIcon,
@@ -73,28 +75,38 @@ With years of experience training clients in both powerlifting and general fitne
 export const services = [
     {
         id: 0,
-        title: "Personalized Training",
+        title: "1:1 Training",
         image: personalizedTraining,
       
     },
     {
         id: 1,
-        title: "Group Fitness Classes",
+        title: "Group Classes",
         image: groupFitness,
      
     },
     {
         id: 2,
-        title: "Nutritional Guidance",
-        image: nutritionalGuidance,
+        title: "Private Classes",
+        image: privateClasses,
         
     },
     {
         id: 3,
+        title: "Online Training",
+        image: onlineTraining,
+        
+    },
+    {
+        id: 4,
+        title: "Nutritional Guidance",
+        image: nutritionalGuidance,
+    },
+    {
+        id: 5,
         title: "Weight Loss Programs",
         image: weightLoss,
-        
-    }
+    },
 ];
 
 export const certificationIcons = [

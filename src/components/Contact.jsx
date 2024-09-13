@@ -36,8 +36,8 @@ const Contact = () => {
                     <h2 className="font-extrabold mb-2 border-b border-n-14">Contact</h2>
                     <p className="text-n-1/80">{email}</p>
                     <p className="text-n-1/80">{phone}</p>
-                    <Link to="/message">
-                        <p className="text-n-1/80 transition-colors hover:text-n-14">Send Message 📧</p>          
+                    <Link to="/message">                   
+                        <p className="text-n-1/80 transition-colors hover:text-n-14">Send Message 📧</p>                                                                         
                     </Link>
                 </div>
             </div>
