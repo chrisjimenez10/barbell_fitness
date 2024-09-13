@@ -12,9 +12,18 @@ import {
     wpcIcon,
     aapfIcon,
     googleReviews,
+    instagram,
+    facebook,
+    tiktok,
+    linkedin,
 
 
 } from "../assets";
+
+export const developer = {
+    fullName: "Christopher Jimenez",
+    portfolio: "https://www.linkedin.com/in/christopherjimenez10/", //Currently it is LinkedIn profile --> CHANGE to portfolio when completed
+}
 
 export const companyName = "Barbell Fitness S&C";
 
@@ -181,35 +190,30 @@ export const contactInfo = {
     email: "training@barbellfsc.com",
 };
 
-// export const socials = [
-//     {
-//       id: "0",
-//       title: "Discord",
-//       iconUrl: discordBlack,
-//       url: "#",
-//     },
-//     {
-//       id: "1",
-//       title: "Twitter",
-//       iconUrl: twitter,
-//       url: "#",
-//     },
-//     {
-//       id: "2",
-//       title: "Instagram",
-//       iconUrl: instagram,
-//       url: "#",
-//     },
-//     {
-//       id: "3",
-//       title: "Telegram",
-//       iconUrl: telegram,
-//       url: "#",
-//     },
-//     {
-//       id: "4",
-//       title: "Facebook",
-//       iconUrl: facebook,
-//       url: "#",
-//     },
-//   ];
+export const socials = [
+    {
+        id: 0,
+        title: "Instagram",
+        iconUrl: instagram,
+        url: "https://www.instagram.com/_barbellfitness/",
+    },
+    {
+        id: 1,
+        title: "Facebook",
+        iconUrl: facebook,
+        url: "https://www.facebook.com/BBFCO/",
+    },
+    {
+        id: 2,
+        title: "TikTok",
+        iconUrl: tiktok,
+        url: "https://www.tiktok.com/@barbellfitnessco",
+    },
+    {
+        id: 3,
+        title: "LinkedIn",
+        iconUrl: linkedin,
+        url: "https://www.linkedin.com/in/alejandro-jimenez-3174b21a9/",
+    }
+  ];
+

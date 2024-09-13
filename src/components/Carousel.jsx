@@ -14,6 +14,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
 
     //State
     const [slidesView, setSlidesView] = useState(1);
+
         //Here, we are using the window object and innerWidth property to capture the CURRENT width screen size
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -86,7 +87,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                     </SwiperSlide>
                 )
             })}                   
-            <div className="swiper-pagination"/>          
+            <div className="swiper-pagination"/>       
         </Swiper>
         
         {/* Arrows DO WORK, and these divs are the previous/next arrows --> NOTE: These go OUTSIDE of the Swiper Component and are activated by the "navigation" prop we pass to the Swiper Component - We set the properties of prevEl/nextEl equal to the corresponding string values of the class name we want to give it --> These properties of the navigation prop (from Navigation Module) will make the arrows/divs BEHAVE like a button with an onClick() function that is triggered to move the slide --> NOTE: We can't really see that much effect of these arrows with AUTOPLAY activated */}

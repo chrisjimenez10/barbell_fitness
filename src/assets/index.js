@@ -29,6 +29,11 @@ import aapfIcon from "../images/aapf_logo.png";
 import googleReviews from "../images/google_reviews.png"; //Divide to individual reviews (edit photo)
 import instagramPost from "../images/instagram_post.png"; //NOT used yet
 
+import instagram from "./socials/instagram.svg";
+import facebook from "./socials/facebook.svg";
+import tiktok from "./socials/tiktok.svg";
+import linkedin from "./socials/linkedin.svg";
+
 
 
 export {
@@ -56,6 +61,9 @@ export {
     aapfIcon,
     googleReviews,
     instagramPost,
- 
+    instagram,
+    facebook,
+    tiktok,
+    linkedin,
 
 };
