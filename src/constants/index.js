@@ -3,6 +3,8 @@ import {
     groupFitness, 
     nutritionalGuidance, 
     weightLoss,
+    onlineTraining,
+    privateClasses,
     apfIcon,
     aceIcon,
     concordiaIcon,
@@ -10,9 +12,20 @@ import {
     wpcIcon,
     aapfIcon,
     googleReviews,
+    instagram,
+    facebook,
+    tiktok,
+    linkedin,
 
 
 } from "../assets";
+
+export const developer = {
+    fullName: "Christopher Jimenez",
+    portfolio: "https://www.linkedin.com/in/christopherjimenez10/", //Currently it is LinkedIn profile --> CHANGE to portfolio when completed
+}
+
+export const companyName = "Barbell Fitness S&C";
 
 export const navigation = [
     {
@@ -73,28 +86,38 @@ With years of experience training clients in both powerlifting and general fitne
 export const services = [
     {
         id: 0,
-        title: "Personalized Training",
+        title: "1:1 Training",
         image: personalizedTraining,
       
     },
     {
         id: 1,
-        title: "Group Fitness Classes",
+        title: "Group Classes",
         image: groupFitness,
      
     },
     {
         id: 2,
-        title: "Nutritional Guidance",
-        image: nutritionalGuidance,
+        title: "Private Classes",
+        image: privateClasses,
         
     },
     {
         id: 3,
+        title: "Online Training",
+        image: onlineTraining,
+        
+    },
+    {
+        id: 4,
+        title: "Nutritional Guidance",
+        image: nutritionalGuidance,
+    },
+    {
+        id: 5,
         title: "Weight Loss Programs",
         image: weightLoss,
-        
-    }
+    },
 ];
 
 export const certificationIcons = [
@@ -166,4 +189,31 @@ export const contactInfo = {
     phone: "(708)-712-6316",
     email: "training@barbellfsc.com",
 };
+
+export const socials = [
+    {
+        id: 0,
+        title: "Instagram",
+        iconUrl: instagram,
+        url: "https://www.instagram.com/_barbellfitness/",
+    },
+    {
+        id: 1,
+        title: "Facebook",
+        iconUrl: facebook,
+        url: "https://www.facebook.com/BBFCO/",
+    },
+    {
+        id: 2,
+        title: "TikTok",
+        iconUrl: tiktok,
+        url: "https://www.tiktok.com/@barbellfitnessco",
+    },
+    {
+        id: 3,
+        title: "LinkedIn",
+        iconUrl: linkedin,
+        url: "https://www.linkedin.com/in/alejandro-jimenez-3174b21a9/",
+    }
+  ];
 

@@ -34,10 +34,10 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col items-start md:items-end gap-2 text-n-1 mt-4">
                     <h2 className="font-extrabold mb-2 border-b border-n-14">Contact</h2>
-                    <p className="text-n-1/80">{email}</p>
-                    <p className="text-n-1/80">{phone}</p>
-                    <Link to="/message">
-                        <p className="text-n-1/80 transition-colors hover:text-n-14">Send Message 📧</p>          
+                    <p className="text-n-1/80">Email: {email}</p>
+                    <p className="text-n-1/80">Phone: {phone}</p>
+                    <Link to="/message">                   
+                        <p className="text-n-1/80 transition-colors hover:text-n-14">Send Message 📧</p>                                                                         
                     </Link>
                 </div>
             </div>

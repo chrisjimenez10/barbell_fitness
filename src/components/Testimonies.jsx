@@ -38,7 +38,7 @@ const Testimonies = () => {
             </ScrollParallax>
 
             <Link to="/success-stories">                       
-                <Button white className="mt-5 translate-y-5 lg:translate-y-10 xl:translate-y-[4rem] xl:-translate-x-5 2xl:-translate-x-7">Learn More</Button>           
+                <Button white className="mt-5 translate-y-5 lg:translate-y-10 xl:translate-y-[4rem] xl:-translate-x-5 2xl:-translate-x-7">See More</Button>           
             </Link>
           </div>
              
