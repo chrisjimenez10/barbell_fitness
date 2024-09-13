@@ -39,8 +39,8 @@ const Testimonies = () => {
 
             <Link to="/success-stories">
               <div className="flex translate-y-10 hover:underline decoration-n-8 xl:translate-y-20">            
-                <h6 className="h6 uppercase">Learn <span style={{color: "#0E0C15"}}>More</span></h6>             
-                <Arrow />
+                <h6 className="h6 uppercase xl:mt-[5rem]">Learn <span style={{color: "#0E0C15"}}>More</span></h6>             
+                <Arrow className="xl:mt-[5rem]"/>
               </div>
             </Link>
           </div>
