@@ -6,4 +6,5 @@
 * [TailwindCSS]("https://tailwindcss.com/docs/installation")
 * [Swiper]("https://swiperjs.com/react")
 * [Canva]("https://www.canva.com/")
+* [sweetalert2]("https://sweetalert2.github.io/#examples")
 

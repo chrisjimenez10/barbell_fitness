@@ -165,6 +165,6 @@ export const contactInfo = {
         weekends: "Sunday (CLOSED)",
     },
     phone: "(708)-712-6316",
-    email: "alejandrojimenez1571@gmail.com", //UPDATE with real email
+    email: "training@barbellfsc.com",
 }
 
