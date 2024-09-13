@@ -16,6 +16,8 @@ import {
 
 } from "../assets";
 
+export const companyName = "Barbell Fitness S&C";
+
 export const navigation = [
     {
         id: 0,
@@ -179,3 +181,35 @@ export const contactInfo = {
     email: "training@barbellfsc.com",
 };
 
+// export const socials = [
+//     {
+//       id: "0",
+//       title: "Discord",
+//       iconUrl: discordBlack,
+//       url: "#",
+//     },
+//     {
+//       id: "1",
+//       title: "Twitter",
+//       iconUrl: twitter,
+//       url: "#",
+//     },
+//     {
+//       id: "2",
+//       title: "Instagram",
+//       iconUrl: instagram,
+//       url: "#",
+//     },
+//     {
+//       id: "3",
+//       title: "Telegram",
+//       iconUrl: telegram,
+//       url: "#",
+//     },
+//     {
+//       id: "4",
+//       title: "Facebook",
+//       iconUrl: facebook,
+//       url: "#",
+//     },
+//   ];

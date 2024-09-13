@@ -59,6 +59,7 @@
   opacity: 1;
 }
 
+/* Color of the Carousel Arrows */
 .swiper-button-prev, .swiper-button-next {
   z-index: 1;
 }

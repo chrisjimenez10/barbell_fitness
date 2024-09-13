@@ -1,6 +1,5 @@
 //Imports
-    // Swiper.js Library (https://swiperjs.com/react#installation)
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
