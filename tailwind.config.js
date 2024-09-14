@@ -11,6 +11,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xxs: "420px",
+        xs: "540px",
+      },
       colors: {
         color: {
           1: "#AC6AFF",
@@ -131,6 +135,9 @@ export default {
         },
         ".button": {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
+        },
+        ".hero-heading": {
+          "@apply text-[2.1rem] leading-[2.5rem] -translate-y-[5rem] xxs:text-[2.8rem] xxs:leading-[3.5rem] xs:text-[3.5rem] xs:leading-[4.2rem] sm:text-[3rem] sm:mt-[4.8rem] sm:leading-[3.5rem] md:text-[4rem] md:leading-[4.5rem] md:mt-[5.3rem] lg:text-[5rem] lg:mt-[9.8rem] lg:leading-[5.5rem] xl:text-[6rem] xl:mt-[16.5rem] xl:leading-[6.5rem] 2xl:text-[7rem] 2xl:leading-[7.8rem] 2xl:mt-[15rem]": {},
         },
       });
       addUtilities({
