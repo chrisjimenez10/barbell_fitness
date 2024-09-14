@@ -1,15 +1,19 @@
 {
   "name": "barbell_fitness",
-  "private": true,
+  "home": "https://chrisjimenez10.github.io/barbell_fitness",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-just-parallax": "^3.1.16",
