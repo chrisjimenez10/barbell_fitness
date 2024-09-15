@@ -4,6 +4,7 @@ import Section from "./Section";
 //Imports
 import { contactInfo } from "../constants";
 import { Link } from "react-router-dom";
+import { googleMap } from "../assets";
 
 const Contact = () => {
 
@@ -21,7 +22,9 @@ const Contact = () => {
 
         <div className="relative px-10">
             <a href={url} target="_blank">
-                <div id="google-image" className="opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem] rounded-md"/>
+                <div className="opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem]">
+                    <img src={googleMap} alt="Google Map" className="rounded-md"/>
+                </div>
             </a>
             
             <div className="flex flex-col items-start md:flex-row md:justify-between body-1 gap-5">

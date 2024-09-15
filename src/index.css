@@ -54,10 +54,6 @@
   transform: translateY(-250%);
 }
 
-#swiper-pagination-2 {
-  transform: translateY(-300%);
-}
-
 .swiper-pagination-bullet-active {
   background-color: #FF6666;
   opacity: 1;
@@ -66,8 +62,4 @@
 /* Color of the Carousel Arrows */
 .swiper-button-prev, .swiper-button-next {
   z-index: 1;
-}
-
-#google-image {
-  background-image: url("src/assets/google_map.png");
 }
