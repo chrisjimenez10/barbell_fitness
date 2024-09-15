@@ -54,6 +54,10 @@
   transform: translateY(-250%);
 }
 
+#swiper-pagination-2 {
+  transform: translateY(-300%);
+}
+
 .swiper-pagination-bullet-active {
   background-color: #FF6666;
   opacity: 1;
@@ -64,4 +68,6 @@
   z-index: 1;
 }
 
-
+#google-image {
+  background-image: url("src/images/google_map.png");
+}

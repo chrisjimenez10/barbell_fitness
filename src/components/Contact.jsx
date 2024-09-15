@@ -21,10 +21,9 @@ const Contact = () => {
 
         <div className="relative px-10">
             <a href={url} target="_blank">
-                <div className="bg-google-image opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem] rounded-md"/>
+                <div id="google-image" className="opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem] rounded-md"/>
             </a>
             
-
             <div className="flex flex-col items-start md:flex-row md:justify-between body-1 gap-5">
                 <div className="flex flex-col items-start gap-2 text-n-1 mt-5">
                     <h2 className="font-extrabold mb-2 border-b border-n-14">Address</h2>               
@@ -41,8 +40,7 @@ const Contact = () => {
                     </Link>
                 </div>
             </div>
-            
-            
+                      
         </div>
     </Section>
   )
