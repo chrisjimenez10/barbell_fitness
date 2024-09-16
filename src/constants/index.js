@@ -174,7 +174,7 @@ export const testimonies = [
     },
     {
         id: 3,
-        url: reviewOne, //Change to actual facebook iframe when another review is available 
+        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0rqZdmVvLiH84G6VPknv9gkxvstEiR9uRuyWZN8mB1Le9seqcroRcPgAZyjjfUcPbl%26id%3D100011367913877&show_text=true&width=500",
         styles: "xl:-translate-x-[5rem] 2xl:-translate-x-[2rem]",
     },
 

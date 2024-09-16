@@ -40,7 +40,6 @@ import linkedin from "./socials/linkedin.svg";
 import googleMap from "../images/google_map.png";
 
 
-
 export {
     companyLogo,
     deadliftVideo,
