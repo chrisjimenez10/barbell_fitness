@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Testimonies from "./components/Testimonies";
 import Contact from "./components/Contact";
 import Reviews from "./components/Reviews";
+import Message from "./components/Message";
 import Footer from "./components/Footer";
 //Design Components
 import ButtonGradient from "./components/design/ButtonGradient";
@@ -34,6 +35,7 @@ const App = () => {
           </>} />
           <Route path="/learnmore" element={<LearnMore />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/message" element={<Message />} />
           <Route path="*" element={<Error />} />
         </Routes>
 

@@ -6,6 +6,7 @@ import { contactInfo } from "../constants";
 import { Link } from "react-router-dom";
 import { googleMap } from "../assets";
 
+
 const Contact = () => {
 
     //Destructure

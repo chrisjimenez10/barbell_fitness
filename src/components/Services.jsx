@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 import Button from "./Button";
 //Imports
 import { services } from "../constants";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -13,7 +14,12 @@ const Services = () => {
           <Carousel slides={services} bgGradient/>
 
           <div className="flex flex-col items-center gap-5 translate-y-5 xxs:translate-y-15">
-            <p className="h6 translate-y-5 xxs:-translate-y-0 xxs:h5 text-center text-n-1 italic"><span className="text-n-14 hover:underline"><a href="/#contact">Call Now</a></span> Or <span className="text-n-14 hover:underline"><a href="/#contact">Send Message</a></span> To Sign Up!</p>
+            <p className="h6 translate-y-5 xxs:-translate-y-0 xxs:h5 text-center text-n-1 italic">
+              <a className="text-n-14 hover:underline" href="/#contact">Call Now </a> 
+              Or
+              <Link to="/message" className="text-n-14 hover:underline"> Send Message </Link> 
+              To Sign Up!
+            </p>
             {/* Button to redirect to Component with Details on Services */}
             {/* <Button white className="translate-y-5">Learn More</Button> */}
           </div>  
