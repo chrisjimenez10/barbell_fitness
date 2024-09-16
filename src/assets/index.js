@@ -33,6 +33,7 @@ import instagram from "./socials/instagram.svg";
 import facebook from "./socials/facebook.svg";
 import tiktok from "./socials/tiktok.svg";
 import linkedin from "./socials/linkedin.svg";
+import googleMap from "../images/google_map.png";
 
 
 
@@ -65,5 +66,6 @@ export {
     facebook,
     tiktok,
     linkedin,
-
+    googleMap,
+    
 };

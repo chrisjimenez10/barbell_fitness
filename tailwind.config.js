@@ -11,6 +11,7 @@ export default {
   ],
   theme: {
     extend: {
+      // We can add additional attributes including screen sizes other than the original built-in from TailwindCSS INSIDE the "extend" object property
       screens: {
         xxs: "420px",
         xs: "540px",
@@ -83,8 +84,6 @@ export default {
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
         "conic-gradient2":
           "conic-gradient(from 225deg, #FFC5C5, #FFA500, #FFC0CB, #FFC107)",
-        "google-image":
-          "url('src/images/google_map.png')",
       },
     },
   },

@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="z-2 absolute top-[6rem] mt-6 uppercase font-extrabold ">
               <h1 className="hero-heading text-n-14">Prepare<br/>To Change<br/><span className="text-n-1">For the Better.</span></h1>
             </div>                       
-            <video className="h-full w-full md:block opacity-50" ref={videoRef} src={deadliftVideo} type="video/mp4" autoPlay muted loop/>            
+            <video className="h-full w-full md:block opacity-50" ref={videoRef} src={deadliftVideo} type="video/mp4" autoPlay muted loop playsInline/>            
           </div>
                                       
         </div>
