@@ -90,7 +90,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                                 )}
                             </div>
                             {item.title && (
-                                <h4 className="h4 mt-3 uppercase">{item.title}</h4>
+                                <h4 className="h4 mt-3 uppercase text-center">{item.title}</h4>
                             )}
                         </div>                     
                     </SwiperSlide>

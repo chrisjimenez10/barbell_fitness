@@ -12,7 +12,7 @@ const Reviews = () => {
       <div className="container relative">
         <Header />
         <div className="flex flex-col items-center mt-[2rem]">
-          <h1 className="h1 uppercase mb-[2rem] border-b border-n-14">Success Stories</h1>
+          <h1 className="h1 uppercase mb-[2rem] border-b border-n-14 text-center">Success Stories</h1>
           <Cards slides={reviews}/>
         </div>
    

@@ -29,8 +29,8 @@ const Cards = ({slides}) => {
       >
         {slides.map((item, index)=>{
           return(
-            <SwiperSlide>
-              <img key={index} src={item} className="object-cover rounded-2xl"/>
+            <SwiperSlide key={index}>
+              <img src={item} className="rounded-2xl"/>
             </SwiperSlide>
           )
         })}
