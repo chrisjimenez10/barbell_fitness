@@ -53,13 +53,26 @@
 .swiper-pagination {
   transform: translateY(-250%);
 }
-
 .swiper-pagination-bullet-active {
   background-color: #FF6666;
   opacity: 1;
 }
-
 /* Color of the Carousel Arrows */
 .swiper-button-prev, .swiper-button-next {
   z-index: 1;
 }
+
+/* Style for Cards */
+.custom-pagination .swiper-pagination {
+  transform: translateY(20%);
+}
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #0E0C15;
+  opacity: 0.5;
+}
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #FF6666;
+  opacity: 1;
+}
+
+

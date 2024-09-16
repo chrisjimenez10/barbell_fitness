@@ -28,6 +28,10 @@ import aapfIcon from "../images/aapf_logo.png";
 
 import googleReviews from "../images/google_reviews.png"; //Divide to individual reviews (edit photo)
 import instagramPost from "../images/instagram_post.png"; //NOT used yet
+import reviewOne from "../images/barbell_fitness_r-1.png";
+import reviewTwo from "../images/barbell_fitness_r-2.png";
+import reviewThree from "../images/barbell_fitness_r-3.png";
+import reviewFour from "../images/barbell_fitness_r-4.png";
 
 import instagram from "./socials/instagram.svg";
 import facebook from "./socials/facebook.svg";
@@ -67,5 +71,9 @@ export {
     tiktok,
     linkedin,
     googleMap,
+    reviewOne,
+    reviewTwo,
+    reviewThree,
+    reviewFour,
     
 };
