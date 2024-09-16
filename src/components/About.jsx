@@ -26,7 +26,7 @@ const About = () => {
                 <Link to="/learnmore"><Button white className="mt-5">Learn More</Button></Link>
             </div>
         
-            <img src={companyLogo} alt="Barbell Logo" className="absolute top-0 translate-y-[2rem] right-0 z-2 rounded-2xl opacity-5 w-[18rem] lg:w-[20rem] xl:w-[25rem] xl:-translate-y-[2rem]"/>
+            <img src={companyLogo} alt="Barbell Logo" className="hidden sm:block absolute top-0 translate-y-[2rem] right-0 z-2 rounded-2xl opacity-5 w-[18rem] lg:w-[20rem] xl:w-[25rem] xl:-translate-y-[2rem]"/>
             <img src={blackLines} alt="Barbell Logo" className="absolute hidden lg:block -top-[5rem] -left-[20rem] -translate-y-9 z-2 opacity-15" width={600}/>
 
             <MouseParallax isAbsolutelyPositioned>

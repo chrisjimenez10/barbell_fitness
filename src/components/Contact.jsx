@@ -22,8 +22,8 @@ const Contact = () => {
 
         <div className="relative px-10">
             <a href={url} target="_blank">
-                <div className="opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem]">
-                    <img src={googleMap} alt="Google Map" className="rounded-md"/>
+                <div className="flex opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem]">
+                    <img src={googleMap} alt="Google Map" className="rounded-md object-cover w-full h-full"/>
                 </div>
             </a>
             
