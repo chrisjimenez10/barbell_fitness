@@ -26,8 +26,8 @@ import tritonIcon from "../images/triton_logo.png";
 import wpcIcon from "../images/wpc_logo.png";
 import aapfIcon from "../images/aapf_logo.png";
 
-import googleReviews from "../images/google_reviews.png"; //Divide to individual reviews (edit photo)
-import instagramPost from "../images/instagram_post.png"; //NOT used yet
+import teamPhoto from "../images/barbell_fitness_team.jpg";
+import instagramPost from "../images/instagram_post.png";
 import reviewOne from "../images/barbell_fitness_r-1.png";
 import reviewTwo from "../images/barbell_fitness_r-2.png";
 import reviewThree from "../images/barbell_fitness_r-3.png";
@@ -64,7 +64,6 @@ export {
     tritonIcon,
     wpcIcon,
     aapfIcon,
-    googleReviews,
     instagramPost,
     instagram,
     facebook,
@@ -75,5 +74,6 @@ export {
     reviewTwo,
     reviewThree,
     reviewFour,
+    teamPhoto,
     
 };

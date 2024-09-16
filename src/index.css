@@ -69,6 +69,11 @@
 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 100%;
+}
+
+#cards {
+  height: 37vh;
 }
 
 

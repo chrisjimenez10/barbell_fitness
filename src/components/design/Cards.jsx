@@ -25,7 +25,8 @@ const Cards = ({slides}) => {
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
         //We can add a custom class to our Swiper Instance and then create a UNIQUE .swiper-pagination style in our index.css for ONLY the Swiper Instance with this class --> The custom class can be WHATEVER but MUST match in index.css
-        className="cards-pagination"
+        className="cards-pagination hidden xxs:block"
+        id="cards"
       >
         {slides.map((item, index)=>{
           return(
