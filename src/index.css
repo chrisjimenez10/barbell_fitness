@@ -46,14 +46,14 @@
 }
 
 /* Style for Cards */
-.custom-pagination .swiper-pagination {
+.cards-pagination .swiper-pagination {
   transform: translateY(20%);
 }
-.custom-pagination .swiper-pagination-bullet {
+.cards-pagination .swiper-pagination-bullet {
   background-color: #0E0C15;
   opacity: 0.5;
 }
-.custom-pagination .swiper-pagination-bullet-active {
+.cards-pagination .swiper-pagination-bullet-active {
   background-color: #FF6666;
   opacity: 1;
 }

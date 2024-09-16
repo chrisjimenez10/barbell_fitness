@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <Section 
     id="hero"
-    className="pt-[12rem] -mt-[5.25rem]"
+    className="-mt-[5.25rem]"
     customPaddings="pt-[3rem]"
     >
         <div className="container relative">
