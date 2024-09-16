@@ -20,7 +20,7 @@ const About = () => {
     >
         <div className="container relative" ref={parallaxRef}>
            
-            <div className="flex flex-col gap-5 text-center pt-5 z-10 items-center">
+            <div className="flex flex-col xxs:gap-5 text-center xxs:pt-5 z-10 items-center">
                 <h1 className="h1 uppercase font-extrabold text-n-1">Make <span style={{color: "#0E0C15"}}>Healthier</span> Choices</h1>
                 <h6 className="h6 md:max-w-md text-n-1 pt-5">Guiding people to a stronger, leaner body. Creating good habits and healthy relationship with their favorite foods! Earning the body they work for and deserve</h6>
                 <Link to="/learnmore"><Button white className="mt-5">Learn More</Button></Link>

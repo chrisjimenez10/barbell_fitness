@@ -11,7 +11,6 @@ import {
     tritonIcon,
     wpcIcon,
     aapfIcon,
-    googleReviews,
     instagram,
     facebook,
     tiktok,
@@ -20,8 +19,7 @@ import {
     reviewTwo,
     reviewThree,
     reviewFour,
-
-
+    instagramPost,
 
 } from "../assets";
 
@@ -222,4 +220,4 @@ export const socials = [
     }
   ];
 
-export const reviews = [ reviewOne, reviewTwo, reviewThree, reviewFour, reviewFour, reviewFour, reviewFour, reviewFour]
+export const reviews = [ reviewOne, reviewTwo, reviewThree, reviewFour, instagramPost]
