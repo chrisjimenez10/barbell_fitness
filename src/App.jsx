@@ -8,6 +8,7 @@ import Trainer from "./components/Trainer";
 import Services from "./components/Services";
 import Testimonies from "./components/Testimonies";
 import Contact from "./components/Contact";
+import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 //Design Components
 import ButtonGradient from "./components/design/ButtonGradient";
@@ -32,6 +33,7 @@ const App = () => {
             <Footer />
           </>} />
           <Route path="/learnmore" element={<LearnMore />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="*" element={<Error />} />
         </Routes>
 

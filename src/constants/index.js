@@ -16,6 +16,11 @@ import {
     facebook,
     tiktok,
     linkedin,
+    reviewOne,
+    reviewTwo,
+    reviewThree,
+    reviewFour,
+
 
 
 } from "../assets";
@@ -171,7 +176,7 @@ export const testimonies = [
     },
     {
         id: 3,
-        url: googleReviews, //Change to actual facebook iframe when another review is available 
+        url: reviewOne, //Change to actual facebook iframe when another review is available 
         styles: "xl:-translate-x-[5rem] 2xl:-translate-x-[2rem]",
     },
 
@@ -217,3 +222,4 @@ export const socials = [
     }
   ];
 
+export const reviews = [ reviewOne, reviewTwo, reviewThree, reviewFour]

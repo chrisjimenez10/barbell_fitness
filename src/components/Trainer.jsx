@@ -9,7 +9,7 @@ const Trainer = () => {
         <div className="flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row">
 
             {/* Wrap Image in div/container element and give "mx-auto" to center image horizontally and "max-w-fit" to maintain aspect ratio across screen sizes */}
-            <div className="relative mx-auto max-w-fit flex flex-col items-center gap-5 animate-fadeIn">
+            <div className="relative mx-auto max-w-fit flex flex-col items-center gap-5">
                 <h1 className="h1 uppercase bg-n-14/80 rounded-md p-3"><span style={{color: "#0E0C15"}}>A</span>lex <span style={{color: "#0E0C15"}}>J</span>imenez</h1>
                 {/* We can apply hover effect on sibling elements by providing the group class to the parent, then we can reference each sibling element with group-... to ensure proper hiding/show effect */}
                 <div className="relative group">
@@ -17,7 +17,7 @@ const Trainer = () => {
                   <img src={trainerPhoto} alt="Trainer" className="overflow-hidden absolute inset-0 px-5 opacity-0 transition-opacity duration-slow group-hover:opacity-100" width={600} height={500}/>
                 </div>
             </div>
-            <div className="md:col-span-1 lg:pr-10 mx-auto max-w-lg flex flex-col gap-2 animate-fadeIn">
+            <div className="md:col-span-1 lg:pr-10 mx-auto max-w-lg flex flex-col gap-2">
                 <h2 className="h2 text-center uppercase ">About Me</h2>
                 <div className="bg-n-14/80 rounded-md p-5 mx-5">
                   <p className="body-2 text-left">{trainerBio}</p>                                 

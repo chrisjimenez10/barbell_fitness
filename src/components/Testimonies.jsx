@@ -31,13 +31,13 @@ const Testimonies = () => {
                   {testimonies.map((item)=>{
                     return(
                       <iframe key={item.id} src={item.url} width="500" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}}  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
-                      className={`pointer-events-none max-w-full ${item.styles ? item.styles : ""}`}/>
+                      className={`pointer-events-none xl:pointer-events-auto max-w-full ${item.styles ? item.styles : ""}`}/>
                     )
                   })}
               </div>         
             </ScrollParallax>
 
-            <Link to="/success-stories">                       
+            <Link to="/reviews">                       
                 <Button white className="mt-5 translate-y-5 lg:translate-y-10 xl:translate-y-[4rem] xl:-translate-x-5 2xl:-translate-x-7">See More</Button>           
             </Link>
           </div>
