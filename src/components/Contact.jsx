@@ -1,11 +1,11 @@
 //Custom Components
 import Section from "./Section";
 //Design Components
+import Reveal from "./design/Reveal";
 //Imports
 import { contactInfo } from "../constants";
 import { Link } from "react-router-dom";
 import { googleMap } from "../assets";
-
 
 const Contact = () => {
 
@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-
+        <Reveal width="w-[100%]">
         <div className="relative px-10">
             <a href={url} target="_blank">
                 <div className="flex opacity-85 transition-opacity hover:opacity-100 bg-cover h-[15rem] sm:h-[20rem] lg:h-[25rem] 2xl:h-[32rem]">
@@ -46,6 +46,7 @@ const Contact = () => {
             </div>
                       
         </div>
+        </Reveal>
     </Section>
   )
 }

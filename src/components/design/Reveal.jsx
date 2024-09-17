@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const Reveal = ({children, width}) => {
+const Reveal = ({children, width, right}) => {
 
     //Creating a ref to for node creation and access of element (no need to depend on re-rendering of component)
     const ref = useRef(null);

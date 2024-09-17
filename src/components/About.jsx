@@ -1,6 +1,8 @@
 //Custom Components
 import Section from "./Section";
 import Button from "./Button";
+//Design Components
+import Reveal from "./design/Reveal";
 //Imports
 import { companyLogo, barbellIcon, dumbellsIcon, plateIcon, benchpressIcon, blackLines } from "../assets";
 import { MouseParallax } from "react-just-parallax";
@@ -18,6 +20,7 @@ const About = () => {
     id="about"
     className="bg-n-14 "
     >
+        <Reveal width="w-[100%]">
         <div className="container relative" ref={parallaxRef}>
            
             <div className="flex flex-col xxs:gap-5 text-center xxs:pt-5 z-10 items-center">
@@ -39,7 +42,7 @@ const About = () => {
             </MouseParallax>
      
         </div>
-
+        </Reveal>
     </Section>
   )
 }
