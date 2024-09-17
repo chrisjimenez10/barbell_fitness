@@ -1,3 +1,6 @@
+//Custom Components
+import Header from "./Header";
+import Section from "./Section";
 //Imports
 import { useRef, useEffect } from "react";
   //Here, we are using EmailJS service to send client-side emails --> NOTE: emailjs has three methods and we are using sendForm() --> We can also use send(), but we need to pass the individual Template Parameters that match what we have in our Template at the EmailJS Website as a JSON Object (both key-values wrapped in quotes)
@@ -37,27 +40,40 @@ const Message = () => {
 
 
   return (
-    <>
+    <Section id="message" customPaddings="p-5" className="mt-10">
+
+      <Header />
+      <h1 className="h1 text-center mb-5">Contact Us</h1>
     
-      <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
+      <div className="flex flex-col items-center bg-n-14 rounded-2xl">
+        <form className="flex flex-col items-start gap-10 mt-15" ref={form} onSubmit={sendEmail}>
 
-        <label htmlFor="user_name">Full Name: </label>
-        <input id="user_name" name="user_name" type="text" required/>
+          <div className="flex flex-col gap-1 ml-5">
+            <label htmlFor="user_name">Full Name: </label>
+            <input id="user_name" name="user_name" type="text" required className="bg-n-1/90 rounded-md text-n-8"/>
+          </div>
 
-        <label htmlFor="user_email">Email: </label>
-        <input id="user_email" name="user_email" type="email" required/>
+          <div className="flex flex-col gap-1 ml-5">
+            <label htmlFor="user_email">Email: </label>
+            <input id="user_email" name="user_email" type="email" required className="bg-n-1/90 rounded-md text-n-8"/>
+          </div>
 
-        <label htmlFor="phone_number">Phone Number: </label>
-        <input id="phone_number" name="phone_number" type="tel" ref={phoneInput}/>
+          <div className="flex flex-col gap-1 ml-5">
+            <label htmlFor="phone_number">Phone Number: </label>
+            <input id="phone_number" name="phone_number" type="tel" ref={phoneInput} className="bg-n-1/90 rounded-md text-n-8"/>
+          </div>
 
-        <label htmlFor="message">Message: </label>
-        <textarea id="message" name="message" required/>
+          <div className="flex flex-col gap-1 ml-5">
+            <label htmlFor="message">Message: </label>
+            <textarea id="message" name="message" required className="bg-n-1/90 rounded-md text-n-8"/>
+          </div>
+                  
+          <input type="submit" value="Send" className="cursor-pointer rounded-md translate-x-[5rem] xxs:translate-x-[6rem] -translate-y-[1rem] bg-n-8/70 text-n-1/70 transition-colors hover:text-n-1 hover:bg-n-8 p-1"/>
 
-        <input type="submit" value="Send" />
-
-      </form>
-   
-    </>
+        </form>
+      </div>
+      
+    </Section>
     
   )
 }
