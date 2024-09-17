@@ -2,6 +2,8 @@
 import Section from "./Section";
 import Carousel from "./Carousel";
 import Button from "./Button";
+//Design Components
+import Reveal from "./design/Reveal";
 //Imports
 import { services } from "../constants";
 import { Link } from "react-router-dom";
@@ -9,6 +11,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <Section id="services" className="mt-[5rem]">
+      <Reveal width="w-[100%]">
       <div className="container relative">
           <h1 className="h1 text-center uppercase mb-[3rem] bg-n-14 py-2 rounded-2xl"><span style={{color: "#0E0C15"}}>S</span>ervices</h1>
           <Carousel slides={services} bgGradient/>
@@ -25,6 +28,7 @@ const Services = () => {
           </div>  
 
       </div>
+      </Reveal>
     </Section>
   )
 }
