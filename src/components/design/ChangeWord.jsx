@@ -26,10 +26,10 @@ const ChangeWord = ({children, className, words}) => {
         if(animate){
             //Here, we are using querySelectors to ADD the class for fading animation (.animate-fadeIn-2) to the wordToChange
             const wordToChange = document.querySelector("#wordToChange");
-            wordToChange.classList.add("animate-fadeIn-2");
+            wordToChange.classList.add("fade-in");
             //Here, we use the setTimeout() function to reset the starting point so we can trigger the animation again
             setTimeout(()=>{
-                wordToChange.classList.remove("animate-fadeIn-2");
+                wordToChange.classList.remove("fade-in");
                 setAnimate(false);
             }, 3000); //NOTE: Important to match the animation time in the CSS (index.css) with the time argument in the setTimeout()
         }

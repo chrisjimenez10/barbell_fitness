@@ -85,7 +85,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                                     <img src={item.image} alt="Slide Image" className="p-1 rounded-2xl"/>
                                 )}
                                 {item.url && (
-                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}}  allowFullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
                                     className={`pointer-events-none max-w-full ${item.styles ? item.styles : ""}`}/>
                                 )}
                             </div>
