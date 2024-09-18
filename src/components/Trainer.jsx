@@ -9,7 +9,7 @@ import { trainerBio, certificationIcons } from "../constants";
 const Trainer = () => {
   return (
     <Section id="trainer" className="mt-[5rem]">
-      <Reveal width="w-[100%]">
+      <Reveal width="w-[100%]" right>
       <img src={grid} alt="Grid" className="absolute inset-0 w-full" width={550} height={550}/>
         <div className="flex flex-col flex-wrap items-center justify-center gap-5 md:flex-row">
 

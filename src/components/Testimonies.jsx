@@ -19,7 +19,7 @@ const Testimonies = () => {
 
   return (
     <Section id="testimonies" className="mt-[5rem] bg-n-14">
-      <Reveal width="w-[100%]">
+      <Reveal width="w-[100%]" right>
         <div className="container relative">
          
           <ChangeWord className="text-center uppercase" words={words}><span className="border-b-2 border-n-8">Stories</span></ChangeWord>
