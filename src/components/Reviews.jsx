@@ -5,6 +5,7 @@ import Section from "./Section";
 //Imports
 import { reviews } from "../constants";
 import { grid, teamPhoto } from "../assets";
+import { Suspense, lazy } from "react";
 
 
 const Reviews = () => {

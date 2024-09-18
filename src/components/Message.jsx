@@ -1,6 +1,8 @@
 //Custom Components
 import Header from "./Header";
 import Section from "./Section";
+//Design Components
+import Reveal from "./design/Reveal";
 //Imports
 import { useRef, useEffect } from "react";
   //Here, we are using EmailJS service to send client-side emails --> NOTE: emailjs has three methods and we are using sendForm() --> We can also use send(), but we need to pass the individual Template Parameters that match what we have in our Template at the EmailJS Website as a JSON Object (both key-values wrapped in quotes)
@@ -40,9 +42,10 @@ const Message = () => {
 
 
   return (
-    <Section id="message" customPaddings="p-5" className="mt-10">
-
+    <Section id="message" customPaddings="p-5" className="mt-10 container">
+      
       <Header />
+      <Reveal>
       <h1 className="h1 text-center mb-5">Contact Us</h1>
     
       <div className="flex flex-col items-center bg-n-14 rounded-2xl">
@@ -72,6 +75,7 @@ const Message = () => {
 
         </form>
       </div>
+      </Reveal>
       
     </Section>
     

@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
+//useInView() Hook: React hook that tracks the visibility of a DOM element within the viewport. It returns an object with information about the element's visibility
+//useAnimation() Hook: React hook that creates an animation controller, allowing you to manage animations programmatically
+
 const Reveal = ({children, width, right}) => {
 
     //Creating a ref to for node creation and access of element (no need to depend on re-rendering of component)
