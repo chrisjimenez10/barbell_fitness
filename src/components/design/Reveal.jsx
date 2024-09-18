@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
+//useInView() Hook: React hook that tracks the visibility of a DOM element within the viewport. It returns an object with information about the element's visibility
+//useAnimation() Hook: React hook that creates an animation controller, allowing you to manage animations programmatically
+
 const Reveal = ({children, width, right}) => {
 
     //Creating a ref to for node creation and access of element (no need to depend on re-rendering of component)
@@ -23,12 +26,13 @@ const Reveal = ({children, width, right}) => {
         <motion.div
             variants={{
                 hidden: { opacity: 0, x: 100 },
+                hidden2: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x:0 },
             }}
-            initial="hidden"
+            initial={`${right ? "hidden" : "hidden2"}`}
             animate={mainControls}
             transition={{
-                duration: 2, delay: 0.25
+                duration: 1.5, delay: 0.25,
             }}
         >{children}</motion.div>
     </div>
