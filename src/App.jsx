@@ -15,6 +15,7 @@ const Message = lazy(()=>import("./components/Message"));
 const Error = lazy(()=>import("./components/Error"));
 //Design Components
 import ButtonGradient from "./components/design/ButtonGradient";
+import Loader from "./components/design/Loader";
 //Dynamic Routing
 import {Routes, Route} from "react-router-dom";
 
@@ -22,7 +23,7 @@ import {Routes, Route} from "react-router-dom";
 const App = () => {
   return (
    
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <div className="overflow-hidden pt-[4.75rem] lg:pt-[5.25rem]">
           <Routes>
             <Route path="/" element={<>

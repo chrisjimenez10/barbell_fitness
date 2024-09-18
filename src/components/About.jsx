@@ -18,7 +18,7 @@ const About = () => {
   return (
     <Section
     id="about"
-    className="bg-n-14 "
+    className="bg-n-14"
     >
         <Reveal width="w-[100%]">
         <div className="container relative" ref={parallaxRef}>
