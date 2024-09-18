@@ -1,6 +1,7 @@
 # Barbell Fitness Website
 --------------------------
-A professional online presence for Alex Jimenez, a certified fitness trainer, showcasing credibility, services, and success stories. 
+A professional online presence for Alex Jimenez, a certified fitness trainer, showcasing credibility, services, and success stories.
+
 ![barbell_fitness](https://github.com/user-attachments/assets/a7c743f7-95f7-4d70-ad22-82a4c5b79763)
 
 # Project Overview
@@ -48,4 +49,9 @@ This website is designed to establish Alex Jimenez as a reputable fitness expert
 This project is proprietary and confidential, developed exclusively for Alex Jimenez and Barbell Fitness S&C. Unauthorized use, reproduction, or distribution is strictly prohibited.
 
 Copyright (c) 2024 Christopher Jimenez. All rights reserved.
+
+## About Me
+Christopher Jimenez - Full-Stack Software Developer
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chrisjimenez10)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/christopherjimenez10/)
 
