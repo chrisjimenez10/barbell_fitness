@@ -15,7 +15,7 @@ const Hero = () => {
     className="-mt-[5.25rem]"
     customPaddings="pt-[3rem]"
     >
-        <div className="container relative">
+        <div className="container relative mb-4 xxs:mb-12 xs:mb-0">
 
           <div className="mt-12">
             <Reveal width="w-[100%]" right>

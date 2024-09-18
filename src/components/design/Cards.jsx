@@ -30,8 +30,8 @@ const Cards = ({slides}) => {
       >
         {slides.map((item, index)=>{
           return(
-            <SwiperSlide key={index}>
-              <img src={item} className="rounded-2xl h-[50px]"/>
+            <SwiperSlide key={index} className="max-w-fit">
+              <img src={item} className="rounded-2xl"/>
             </SwiperSlide>
           )
         })}
