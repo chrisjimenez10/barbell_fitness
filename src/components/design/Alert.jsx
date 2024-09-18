@@ -13,6 +13,7 @@ const Alert = ({formSent, setFormSent}) => {
   
   //Function
   const showAlert = () => {
+    //Documentation to customize Alert Window in README.md
     MySwal.fire({
       title: <h1 className="text-n-8">Thank You!</h1>,
       html: <p className="text-n-8">Message was sent successfully.</p>,
