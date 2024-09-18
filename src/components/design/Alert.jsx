@@ -20,6 +20,7 @@ const Alert = ({formSent, setFormSent}) => {
       iconColor: "#FF6666",
       confirmButtonColor: "#FF6666",
       background: `url(${companyLogo}) white no-repeat top left / 165px 165px`,
+      timer: 3000,
       didClose: ()=> {
         setTimeout(() => navigate("/"), 1000);
       }
