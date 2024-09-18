@@ -8,4 +8,6 @@
 * [Canva](https://www.canva.com/)
 * [sweetalert2](https://sweetalert2.github.io/#examples)
 * [EmailJS](https://www.emailjs.com/docs/)
+* [Framer Motion](https://www.framer.com/motion/)
+* [Vite](https://vitejs.dev/guide/)
 
