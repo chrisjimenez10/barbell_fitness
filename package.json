@@ -21,6 +21,8 @@
     "react-just-parallax": "^3.1.16",
     "react-router-dom": "^6.26.1",
     "scroll-lock": "^2.1.5",
+    "sweetalert2": "^11.14.0",
+    "sweetalert2-react-content": "^5.0.7",
     "swiper": "^11.1.12"
   },
   "devDependencies": {

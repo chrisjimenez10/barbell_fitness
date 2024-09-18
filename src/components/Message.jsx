@@ -3,12 +3,16 @@ import Header from "./Header";
 import Section from "./Section";
 //Design Components
 import Reveal from "./design/Reveal";
+import Alert from "./design/Alert";
 //Imports
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
   //Here, we are using EmailJS service to send client-side emails --> NOTE: emailjs has three methods and we are using sendForm() --> We can also use send(), but we need to pass the individual Template Parameters that match what we have in our Template at the EmailJS Website as a JSON Object (both key-values wrapped in quotes)
 import emailjs from "@emailjs/browser";
 
 const Message = () => {
+
+  //State
+  const [formSent, setFormSent] = useState(false);
 
   //We can pass the "ref" attribute to our <form> element, so we escape the need to have to update and store input values through state --> This will interact directly with the DOM and all the input values will be stored within the variable we assign the "ref" attribute to, so for us the "form" variable --> We can then use the sendForm() method of emailjs and pass the Template Parameters via "form.current"
   const form = useRef();
@@ -35,6 +39,7 @@ const Message = () => {
       await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
         publicKey: import.meta.env.VITE_PUBLIC_KEY,
       });
+      setFormSent(true);
     }catch(error){
       console.error("Error sending email:", error);
     }
@@ -45,6 +50,7 @@ const Message = () => {
     <Section id="message" customPaddings="p-5" className="mt-10 container">
       
       <Header />
+      <Alert formSent={formSent} setFormSent={setFormSent}/>
       <Reveal>
       <h1 className="h1 text-center mb-5">Contact Us</h1>
     

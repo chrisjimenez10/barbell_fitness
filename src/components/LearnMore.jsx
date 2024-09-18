@@ -5,12 +5,14 @@ import Header from "./Header";
 import { GradientLight } from "./design/GradientLight";
 import { healthyLinks } from "../constants";
 import Button from "./Button";
+import Reveal from "./design/Reveal";
 
 
 const LearnMore = () => {
   return (
     <Section id="learnmore">
         <Header />
+        <Reveal width="w-[100%]">
         <div className="container relative z-2">
             <div className="flex flex-wrap gap-10 mb-10">
                 {healthyLinks.map((item)=>{
@@ -29,7 +31,7 @@ const LearnMore = () => {
             </div>
 
         </div>
-
+        </Reveal>
     </Section>
   )
 }
