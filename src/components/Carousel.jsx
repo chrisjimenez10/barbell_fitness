@@ -74,7 +74,8 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                 // Disabling class for "Testimonies" Carousel so bullets are not in view
                 el: slidesPerView ? "" : ".swiper-pagination",
                 clickable: true,      
-            }}      
+            }}
+            grabCursor={true}      
         >
             {slides.map((item)=>{
                 return(
