@@ -39,6 +39,11 @@ import tiktok from "./socials/tiktok.svg";
 import linkedin from "./socials/linkedin.svg";
 import googleMap from "../images/google_map.png";
 
+import fbReviewOne from "../images/facebook_review-1.png";
+import fbReviewTwo from "../images/facebook_review-2.png";
+import fbReviewThree from "../images/facebook_review-3.png";
+import fbReviewFour from "../images/facebook_review-4.png";
+
 
 export {
     companyLogo,
@@ -74,5 +79,9 @@ export {
     reviewThree,
     reviewFour,
     teamPhoto,
+    fbReviewOne,
+    fbReviewTwo,
+    fbReviewThree,
+    fbReviewFour,
     
 };

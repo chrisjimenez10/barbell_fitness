@@ -20,6 +20,11 @@ import {
     reviewThree,
     reviewFour,
     instagramPost,
+    fbReviewOne,
+    fbReviewTwo,
+    fbReviewThree,
+    fbReviewFour,
+
 
 } from "../assets";
 
@@ -155,26 +160,26 @@ export const certificationIcons = [
         url: "https://worldpowerliftingcongress.com/about-apf/#",
     },
 ];
-
+//Replace iframe links with images
 export const testimonies = [
     {
         id: 0,
-        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsamantha.taylor.52493%2Fposts%2Fpfbid0cjMncwFLAnqR7JWpoAk6Do9gCjiqA4qjVajvxeA428TRnMKEuitfVWxpvJ3ruR5yl&show_text=true&width=500",
+        url: fbReviewOne,
         styles: "xl:translate-x-[5rem]",
     },
     {
         id: 1,
-        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid07Kc8bU3Rxv29JuQ7MidNE4po378t2jLe8KcxpHewA4hzRyqUCT8kALU5UoQi1tRHl%26id%3D100006228405065&show_text=true&width=500",
+        url: fbReviewTwo,
         styles: "2xl:translate-x-[5rem]",
     },
     {
         id: 2,
-        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkendall.evans.5%2Fposts%2Fpfbid0hbLf2DyRDhJdKGhGYX1zeDdD6ZKxUdm4v5mPafTUmUBFj7NLi811g7xDThF4hJ5gl&show_text=true&width=500",
+        url: fbReviewThree,
         styles: "2xl:-translate-x-[5rem]",
     },
     {
         id: 3,
-        url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0rqZdmVvLiH84G6VPknv9gkxvstEiR9uRuyWZN8mB1Le9seqcroRcPgAZyjjfUcPbl%26id%3D100011367913877&show_text=true&width=500",
+        url: fbReviewFour,
         styles: "xl:-translate-x-[5rem] 2xl:-translate-x-[2rem]",
     },
 

@@ -36,8 +36,8 @@ const Message = () => {
     if(!form.current) return; //Check for null
 
     try{
-      await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
-        publicKey: import.meta.env.VITE_PUBLIC_KEY,
+      await emailjs.sendForm("service_c5j2uhf", "template_g9ftjqm", form.current, {
+        publicKey: "IuG3Dwb1SMJ2tutmX", //Hard Coded EmailJS Credentials --> NOTE: DO NOT upload to GitHub
       });
       setFormSent(true);
     }catch(error){

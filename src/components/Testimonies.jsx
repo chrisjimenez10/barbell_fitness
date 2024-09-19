@@ -32,8 +32,8 @@ const Testimonies = () => {
               <div className="hidden xl:flex justify-between flex-wrap gap-15 translate-y-[4rem]" ref={parallaxref}>
                   {testimonies.map((item)=>{
                     return(
-                      <iframe key={item.id} src={item.url} width="500" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
-                      className={`pointer-events-none xl:pointer-events-auto max-w-full ${item.styles ? item.styles : ""}`}/>
+                      <img key={item.id} src={item.url}
+                      className={`${item.styles ? item.styles : ""} h-[20rem] w-[33rem] rounded-2xl`}/>
                     )
                   })}
               </div>         
