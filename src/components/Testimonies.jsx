@@ -33,7 +33,7 @@ const Testimonies = () => {
                   {testimonies.map((item)=>{
                     return(
                       <img key={item.id} src={item.url}
-                      className={`${item.styles ? item.styles : ""} h-[20rem] w-[33rem] rounded-2xl`}/>
+                      className={`${item.styles ? item.styles : ""} h-[15rem] w-[33rem] rounded-2xl`}/>
                     )
                   })}
               </div>         

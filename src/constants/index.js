@@ -185,7 +185,7 @@ export const testimonies = [
 
 ];
 
-export const words = ["Success", "Triumphant", "Uplifting", "Amazing"];
+export const words = ["Success", "Triumphant", "Prevailing"];
 
 export const contactInfo = {
     address: "13 Main St, Bensenville, IL 60106",
