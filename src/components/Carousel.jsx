@@ -55,7 +55,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
             // The spaceBetween prop is used to assign the distance between each slide
             spaceBetween={50}
             // The slidesPerView prop is used to assign how many slides are visible at a time
-            slidesPerView={slidesPerView ? slidesView : 1}
+            slidesPerView={1}
             // We use the loop + speed props to continously slide through all the slides
             loop={true}
             speed={10000}
@@ -74,7 +74,7 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                 // Disabling class for "Testimonies" Carousel so bullets are not in view
                 el: slidesPerView ? "" : ".swiper-pagination",
                 clickable: true,      
-            }}
+            }}      
         >
             {slides.map((item)=>{
                 return(
@@ -85,8 +85,8 @@ const Carousel = ({slides, className, slidesPerView, bgGradient, reverse}) => {
                                     <img src={item.image} alt="Slide Image" className="p-1 rounded-2xl"/>
                                 )}
                                 {item.url && (
-                                    <iframe key={item.id} src={item.url} width="800" height="265" style={{border:"none", overflow:"hidden", borderRadius: "10px"}} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
-                                    className={`pointer-events-none max-w-full ${item.styles ? item.styles : ""}`}/>
+                                    <img key={item.id} src={item.url}
+                                    className={`${item.styles ? item.styles : ""} rounded-lg w-fit`} alt="Review Image"/>
                                 )}
                             </div>
                             {item.title && (

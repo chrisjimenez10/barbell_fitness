@@ -37,7 +37,7 @@ const Message = () => {
 
     try{
       await emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
-        publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        publicKey: import.meta.env.VITE_PUBLIC_KEY, //Hard Coded EmailJS Credentials --> NOTE: DO NOT upload to GitHub
       });
       setFormSent(true);
     }catch(error){
