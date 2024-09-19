@@ -100,13 +100,13 @@ export const services = [
     },
     {
         id: 1,
-        title: "Group Classes",
+        title: "Group Training",
         image: groupFitness,
      
     },
     {
         id: 2,
-        title: "Private Classes",
+        title: "Private Training",
         image: privateClasses,
         
     },
