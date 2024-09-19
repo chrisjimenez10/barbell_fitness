@@ -26,12 +26,17 @@ This website is designed to establish Alex Jimenez as a reputable fitness expert
 ---------------------
 * Front-end: JavaScript, React, HTML, CSS, TailwindCSS, Parallax, Framer Motion, Sweetalert2, Swiper
 * Back-end: EmailJS for contact form functionality
+* Deployment: AWS S3-Buckets, AWS Cloudfront
 
 ## Goals & Requirements
 ------------------------
 * Establish Alex Jimenez as a credible fitness expert
 * Showcase services and success stories to attract potential clients
 * Provide an easy way for clients to get in touch
+
+## Links
+* [Live Site](https://barbellfsc.com/)
+* [GitHub Repo](https://github.com/chrisjimenez10/barbell_fitness)
 
 ## Credits
 -------------
