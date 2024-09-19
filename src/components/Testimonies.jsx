@@ -28,7 +28,7 @@ const Testimonies = () => {
           <Carousel slides={testimonies} slidesPerView reverse className="xl:hidden translate-y-10"/>
 
           <div className="flex flex-col items-center">
-            <ScrollParallax>
+            <ScrollParallax strength={0.05}>
               <div className="hidden xl:flex justify-between flex-wrap gap-15 translate-y-[4rem]" ref={parallaxref}>
                   {testimonies.map((item)=>{
                     return(
